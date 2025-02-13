@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/local/phud_project/build/_deps/catch2-src/src/catch2/.. -I/usr/local/phud_project/build/_deps/catch2-build/generated-includes
+CXX_INCLUDES = -I/usr/local/phud_project/include -I/usr/local/phud_project/build/_deps/catch2-src/src/catch2/.. -I/usr/local/phud_project/build/_deps/catch2-build/generated-includes
 
 CXX_FLAGS = -std=gnu++17 -ffile-prefix-map=/usr/local/phud_project/build/_deps/catch2-src/=
 

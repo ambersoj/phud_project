@@ -136,21 +136,8 @@ ipc_lib: cmake_check_build_system
 
 # fast build rule for target.
 ipc_lib/fast:
-	$(MAKE) $(MAKESILENT) -f ipc_lib/CMakeFiles/ipc_lib.dir/build.make ipc_lib/CMakeFiles/ipc_lib.dir/build
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipc_lib.dir/build.make CMakeFiles/ipc_lib.dir/build
 .PHONY : ipc_lib/fast
-
-#=============================================================================
-# Target rules for targets named command_lib
-
-# Build rule for target.
-command_lib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 command_lib
-.PHONY : command_lib
-
-# fast build rule for target.
-command_lib/fast:
-	$(MAKE) $(MAKESILENT) -f command_lib/CMakeFiles/command_lib.dir/build.make command_lib/CMakeFiles/command_lib.dir/build
-.PHONY : command_lib/fast
 
 #=============================================================================
 # Target rules for targets named test_ipc
@@ -166,17 +153,17 @@ test_ipc/fast:
 .PHONY : test_ipc/fast
 
 #=============================================================================
-# Target rules for targets named test_command
+# Target rules for targets named test_SharedMemoryIPC
 
 # Build rule for target.
-test_command: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_command
-.PHONY : test_command
+test_SharedMemoryIPC: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_SharedMemoryIPC
+.PHONY : test_SharedMemoryIPC
 
 # fast build rule for target.
-test_command/fast:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_command.dir/build.make tests/CMakeFiles/test_command.dir/build
-.PHONY : test_command/fast
+test_SharedMemoryIPC/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_SharedMemoryIPC.dir/build.make tests/CMakeFiles/test_SharedMemoryIPC.dir/build
+.PHONY : test_SharedMemoryIPC/fast
 
 #=============================================================================
 # Target rules for targets named Catch2
@@ -204,6 +191,78 @@ Catch2WithMain/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/build
 .PHONY : Catch2WithMain/fast
 
+src/IPCManager.o: src/IPCManager.cpp.o
+.PHONY : src/IPCManager.o
+
+# target to build an object file
+src/IPCManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipc_lib.dir/build.make CMakeFiles/ipc_lib.dir/src/IPCManager.cpp.o
+.PHONY : src/IPCManager.cpp.o
+
+src/IPCManager.i: src/IPCManager.cpp.i
+.PHONY : src/IPCManager.i
+
+# target to preprocess a source file
+src/IPCManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipc_lib.dir/build.make CMakeFiles/ipc_lib.dir/src/IPCManager.cpp.i
+.PHONY : src/IPCManager.cpp.i
+
+src/IPCManager.s: src/IPCManager.cpp.s
+.PHONY : src/IPCManager.s
+
+# target to generate assembly for a file
+src/IPCManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipc_lib.dir/build.make CMakeFiles/ipc_lib.dir/src/IPCManager.cpp.s
+.PHONY : src/IPCManager.cpp.s
+
+src/SharedMemoryIPC.o: src/SharedMemoryIPC.cpp.o
+.PHONY : src/SharedMemoryIPC.o
+
+# target to build an object file
+src/SharedMemoryIPC.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipc_lib.dir/build.make CMakeFiles/ipc_lib.dir/src/SharedMemoryIPC.cpp.o
+.PHONY : src/SharedMemoryIPC.cpp.o
+
+src/SharedMemoryIPC.i: src/SharedMemoryIPC.cpp.i
+.PHONY : src/SharedMemoryIPC.i
+
+# target to preprocess a source file
+src/SharedMemoryIPC.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipc_lib.dir/build.make CMakeFiles/ipc_lib.dir/src/SharedMemoryIPC.cpp.i
+.PHONY : src/SharedMemoryIPC.cpp.i
+
+src/SharedMemoryIPC.s: src/SharedMemoryIPC.cpp.s
+.PHONY : src/SharedMemoryIPC.s
+
+# target to generate assembly for a file
+src/SharedMemoryIPC.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipc_lib.dir/build.make CMakeFiles/ipc_lib.dir/src/SharedMemoryIPC.cpp.s
+.PHONY : src/SharedMemoryIPC.cpp.s
+
+src/UnixSocketIPC.o: src/UnixSocketIPC.cpp.o
+.PHONY : src/UnixSocketIPC.o
+
+# target to build an object file
+src/UnixSocketIPC.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipc_lib.dir/build.make CMakeFiles/ipc_lib.dir/src/UnixSocketIPC.cpp.o
+.PHONY : src/UnixSocketIPC.cpp.o
+
+src/UnixSocketIPC.i: src/UnixSocketIPC.cpp.i
+.PHONY : src/UnixSocketIPC.i
+
+# target to preprocess a source file
+src/UnixSocketIPC.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipc_lib.dir/build.make CMakeFiles/ipc_lib.dir/src/UnixSocketIPC.cpp.i
+.PHONY : src/UnixSocketIPC.cpp.i
+
+src/UnixSocketIPC.s: src/UnixSocketIPC.cpp.s
+.PHONY : src/UnixSocketIPC.s
+
+# target to generate assembly for a file
+src/UnixSocketIPC.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipc_lib.dir/build.make CMakeFiles/ipc_lib.dir/src/UnixSocketIPC.cpp.s
+.PHONY : src/UnixSocketIPC.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -215,10 +274,18 @@ help:
 	@echo "... test"
 	@echo "... Catch2"
 	@echo "... Catch2WithMain"
-	@echo "... command_lib"
 	@echo "... ipc_lib"
-	@echo "... test_command"
+	@echo "... test_SharedMemoryIPC"
 	@echo "... test_ipc"
+	@echo "... src/IPCManager.o"
+	@echo "... src/IPCManager.i"
+	@echo "... src/IPCManager.s"
+	@echo "... src/SharedMemoryIPC.o"
+	@echo "... src/SharedMemoryIPC.i"
+	@echo "... src/SharedMemoryIPC.s"
+	@echo "... src/UnixSocketIPC.o"
+	@echo "... src/UnixSocketIPC.i"
+	@echo "... src/UnixSocketIPC.s"
 .PHONY : help
 
 

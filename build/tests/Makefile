@@ -141,42 +141,42 @@ test_ipc/fast:
 .PHONY : test_ipc/fast
 
 # Convenience name for target.
-tests/CMakeFiles/test_command.dir/rule:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_command.dir/rule
-.PHONY : tests/CMakeFiles/test_command.dir/rule
+tests/CMakeFiles/test_SharedMemoryIPC.dir/rule:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_SharedMemoryIPC.dir/rule
+.PHONY : tests/CMakeFiles/test_SharedMemoryIPC.dir/rule
 
 # Convenience name for target.
-test_command: tests/CMakeFiles/test_command.dir/rule
-.PHONY : test_command
+test_SharedMemoryIPC: tests/CMakeFiles/test_SharedMemoryIPC.dir/rule
+.PHONY : test_SharedMemoryIPC
 
 # fast build rule for target.
-test_command/fast:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_command.dir/build.make tests/CMakeFiles/test_command.dir/build
-.PHONY : test_command/fast
+test_SharedMemoryIPC/fast:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_SharedMemoryIPC.dir/build.make tests/CMakeFiles/test_SharedMemoryIPC.dir/build
+.PHONY : test_SharedMemoryIPC/fast
 
-test_command.o: test_command.cpp.o
-.PHONY : test_command.o
+test_SharedMemoryIPC.o: test_SharedMemoryIPC.cpp.o
+.PHONY : test_SharedMemoryIPC.o
 
 # target to build an object file
-test_command.cpp.o:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_command.dir/build.make tests/CMakeFiles/test_command.dir/test_command.cpp.o
-.PHONY : test_command.cpp.o
+test_SharedMemoryIPC.cpp.o:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_SharedMemoryIPC.dir/build.make tests/CMakeFiles/test_SharedMemoryIPC.dir/test_SharedMemoryIPC.cpp.o
+.PHONY : test_SharedMemoryIPC.cpp.o
 
-test_command.i: test_command.cpp.i
-.PHONY : test_command.i
+test_SharedMemoryIPC.i: test_SharedMemoryIPC.cpp.i
+.PHONY : test_SharedMemoryIPC.i
 
 # target to preprocess a source file
-test_command.cpp.i:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_command.dir/build.make tests/CMakeFiles/test_command.dir/test_command.cpp.i
-.PHONY : test_command.cpp.i
+test_SharedMemoryIPC.cpp.i:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_SharedMemoryIPC.dir/build.make tests/CMakeFiles/test_SharedMemoryIPC.dir/test_SharedMemoryIPC.cpp.i
+.PHONY : test_SharedMemoryIPC.cpp.i
 
-test_command.s: test_command.cpp.s
-.PHONY : test_command.s
+test_SharedMemoryIPC.s: test_SharedMemoryIPC.cpp.s
+.PHONY : test_SharedMemoryIPC.s
 
 # target to generate assembly for a file
-test_command.cpp.s:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_command.dir/build.make tests/CMakeFiles/test_command.dir/test_command.cpp.s
-.PHONY : test_command.cpp.s
+test_SharedMemoryIPC.cpp.s:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_SharedMemoryIPC.dir/build.make tests/CMakeFiles/test_SharedMemoryIPC.dir/test_SharedMemoryIPC.cpp.s
+.PHONY : test_SharedMemoryIPC.cpp.s
 
 test_ipc.o: test_ipc.cpp.o
 .PHONY : test_ipc.o
@@ -211,11 +211,11 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... test_command"
+	@echo "... test_SharedMemoryIPC"
 	@echo "... test_ipc"
-	@echo "... test_command.o"
-	@echo "... test_command.i"
-	@echo "... test_command.s"
+	@echo "... test_SharedMemoryIPC.o"
+	@echo "... test_SharedMemoryIPC.i"
+	@echo "... test_SharedMemoryIPC.s"
 	@echo "... test_ipc.o"
 	@echo "... test_ipc.i"
 	@echo "... test_ipc.s"

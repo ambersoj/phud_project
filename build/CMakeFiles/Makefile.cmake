@@ -16,8 +16,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "_deps/catch2-src/CMakeLists.txt"
   "_deps/catch2-src/src/CMakeLists.txt"
   "_deps/catch2-src/src/catch2/catch_user_config.hpp.in"
-  "/usr/local/phud_project/command_lib/CMakeLists.txt"
-  "/usr/local/phud_project/ipc_lib/CMakeLists.txt"
   "/usr/local/phud_project/tests/CMakeLists.txt"
   "/usr/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in"
   "/usr/share/cmake-3.28/Modules/CMakeCCompilerABI.c"
@@ -146,8 +144,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.28.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "ipc_lib/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "command_lib/CMakeFiles/CMakeDirectoryInformation.cmake"
   "_deps/catch2-subbuild/CMakeLists.txt"
   "tests/CMakeFiles/CMakeDirectoryInformation.cmake"
   "_deps/catch2-build/CMakeFiles/CMakeDirectoryInformation.cmake"
@@ -157,10 +153,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "ipc_lib/CMakeFiles/ipc_lib.dir/DependInfo.cmake"
-  "command_lib/CMakeFiles/command_lib.dir/DependInfo.cmake"
+  "CMakeFiles/ipc_lib.dir/DependInfo.cmake"
   "tests/CMakeFiles/test_ipc.dir/DependInfo.cmake"
-  "tests/CMakeFiles/test_command.dir/DependInfo.cmake"
+  "tests/CMakeFiles/test_SharedMemoryIPC.dir/DependInfo.cmake"
   "_deps/catch2-build/src/CMakeFiles/Catch2.dir/DependInfo.cmake"
   "_deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/DependInfo.cmake"
   )

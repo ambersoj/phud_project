@@ -1,10 +1,13 @@
 #include "IPCManager.h"
-#include "UnixSocketIPC.h"
+#include "../include/UnixSocketIPC.h"
+#include "../include/SharedMemoryIPC.h"
 
 void IPCManager::setIPCType(IPCType type) {
-    currentType = type;  // Store the selected type
+    currentType = type;
     if (type == IPCType::SOCKETS) {
         ipc = std::make_unique<UnixSocketIPC>();
+    } else if (type == IPCType::SHARED_MEMORY) {
+        ipc = std::make_unique<SharedMemoryIPC>();
     }
 }
 

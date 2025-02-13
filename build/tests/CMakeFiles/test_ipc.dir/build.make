@@ -93,7 +93,7 @@ test_ipc_EXTERNAL_OBJECTS =
 tests/test_ipc: tests/CMakeFiles/test_ipc.dir/test_ipc.cpp.o
 tests/test_ipc: tests/CMakeFiles/test_ipc.dir/build.make
 tests/test_ipc: _deps/catch2-build/src/libCatch2Main.a
-tests/test_ipc: ipc_lib/libipc_lib.a
+tests/test_ipc: libipc_lib.a
 tests/test_ipc: _deps/catch2-build/src/libCatch2.a
 tests/test_ipc: tests/CMakeFiles/test_ipc.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/usr/local/phud_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_ipc"
