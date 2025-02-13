@@ -1,0 +1,16 @@
+@startuml
+class IPCManager {
+  + setIPCType(type: IPCType): void
+  + sendMessage(message: string): void
+  + receiveMessage(): string
+}
+
+class IPCType {
+  <<enumeration>>
+  SHARED_MEMORY
+  SOCKETS
+  NAMED_PIPES
+}
+
+IPCManager --> IPCType
+@enduml

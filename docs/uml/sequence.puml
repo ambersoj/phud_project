@@ -1,0 +1,8 @@
+@startuml
+User -> Phud: enters "filter tcp port 80"
+Phud -> CommandManager: lookup "filter"
+CommandManager -> DynamicLibraryLoader: load "filter.so"
+DynamicLibraryLoader -> FilterCommand: execute(args)
+FilterCommand -> Phud: return success
+Phud -> User: displays "Filter set"
+@enduml
