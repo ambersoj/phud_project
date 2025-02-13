@@ -1,0 +1,42 @@
+Start testing: Feb 13 16:38 CST
+----------------------------------------------------------
+1/2 Testing: IPC_Test
+1/2 Test: IPC_Test
+Command: "/usr/local/phud_project/build/tests/test_ipc"
+Directory: /usr/local/phud_project/build/tests
+"IPC_Test" start time: Feb 13 16:38 CST
+Output:
+----------------------------------------------------------
+Randomness seeded to: 3620727100
+Error connecting to socket
+===============================================================================
+All tests passed (1 assertion in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"IPC_Test" end time: Feb 13 16:38 CST
+"IPC_Test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: SharedMemoryIPC_Test
+2/2 Test: SharedMemoryIPC_Test
+Command: "/usr/local/phud_project/build/tests/test_SharedMemoryIPC"
+Directory: /usr/local/phud_project/build/tests
+"SharedMemoryIPC_Test" start time: Feb 13 16:38 CST
+Output:
+----------------------------------------------------------
+Randomness seeded to: 4114074975
+===============================================================================
+All tests passed (1 assertion in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"SharedMemoryIPC_Test" end time: Feb 13 16:38 CST
+"SharedMemoryIPC_Test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Feb 13 16:38 CST

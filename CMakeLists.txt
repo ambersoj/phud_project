@@ -1,12 +1,20 @@
-cmake_minimum_required(VERSION 3.16)
+cmake_minimum_required(VERSION 3.10)
 project(phud_project)
 
-# Enable testing
-include(CTest)
+set(CMAKE_CXX_STANDARD 17)
 
-# Add subdirectories for modular libraries
-add_subdirectory(libs/command_lib)
-add_subdirectory(libs/ipc_lib)
+# Include directories
+include_directories(${CMAKE_SOURCE_DIR}/include)
 
-# Add integration tests
+# Add the IPC library
+add_library(ipc_lib
+    src/IPCManager.cpp
+    src/SharedMemoryIPC.cpp
+    src/UnixSocketIPC.cpp  # ✅ Add this if it's missing
+)
+
+target_link_libraries(ipc_lib PRIVATE pthread)
+
+# Add the tests
+enable_testing()
 add_subdirectory(tests)

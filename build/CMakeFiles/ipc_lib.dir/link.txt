@@ -1,0 +1,2 @@
+/usr/bin/ar qc libipc_lib.a CMakeFiles/ipc_lib.dir/src/IPCManager.cpp.o CMakeFiles/ipc_lib.dir/src/SharedMemoryIPC.cpp.o CMakeFiles/ipc_lib.dir/src/UnixSocketIPC.cpp.o
+/usr/bin/ranlib libipc_lib.a

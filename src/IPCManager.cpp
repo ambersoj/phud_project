@@ -1,6 +1,6 @@
 #include "IPCManager.h"
-#include "UnixSocketIPC.h"
-#include "SharedMemoryIPC.h"
+#include "../include/UnixSocketIPC.h"
+#include "../include/SharedMemoryIPC.h"
 
 void IPCManager::setIPCType(IPCType type) {
     currentType = type;
