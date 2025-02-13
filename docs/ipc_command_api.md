@@ -70,6 +70,25 @@ virtual std::string receiveMessage() = 0;
 
 ---
 
+### **Implementation: `IPCInterface.h`**
+```cpp
+#ifndef IPC_INTERFACE_H
+#define IPC_INTERFACE_H
+
+#include <string>
+
+class IPCInterface {
+public:
+    virtual ~IPCInterface() = default;
+    virtual void sendMessage(const std::string& message) = 0;
+    virtual std::string receiveMessage() = 0;
+};
+
+#endif // IPC_INTERFACE_H
+```
+
+---
+
 ### **Class: `UnixSocketIPC` (First IPC Implementation)**
 #### **Description:**
 Implements IPC using UNIX domain sockets.
@@ -86,6 +105,74 @@ std::string receiveMessage() override;
 ```
 - **Description:** Receives a message via a UNIX domain socket.
 - **Returns:** `std::string`
+
+---
+
+### **Implementation: `UnixSocketIPC.h`**
+```cpp
+#ifndef UNIX_SOCKET_IPC_H
+#define UNIX_SOCKET_IPC_H
+
+#include "IPCInterface.h"
+#include <string>
+#include <sys/socket.h>
+#include <sys/un.h>
+#include <unistd.h>
+
+class UnixSocketIPC : public IPCInterface {
+private:
+    int socket_fd;
+    struct sockaddr_un address;
+    std::string socket_path = "/tmp/unix_socket_ipc";
+public:
+    UnixSocketIPC();
+    ~UnixSocketIPC();
+    void sendMessage(const std::string& message) override;
+    std::string receiveMessage() override;
+};
+
+#endif // UNIX_SOCKET_IPC_H
+```
+
+---
+
+### **Implementation: `UnixSocketIPC.cpp`**
+```cpp
+#include "UnixSocketIPC.h"
+#include <iostream>
+#include <cstring>
+
+UnixSocketIPC::UnixSocketIPC() {
+    socket_fd = socket(AF_UNIX, SOCK_STREAM, 0);
+    if (socket_fd < 0) {
+        std::cerr << "Error creating socket" << std::endl;
+        return;
+    }
+    memset(&address, 0, sizeof(address));
+    address.sun_family = AF_UNIX;
+    strncpy(address.sun_path, socket_path.c_str(), sizeof(address.sun_path) - 1);
+
+    if (connect(socket_fd, (struct sockaddr*)&address, sizeof(address)) < 0) {
+        std::cerr << "Error connecting to socket" << std::endl;
+        close(socket_fd);
+    }
+}
+
+UnixSocketIPC::~UnixSocketIPC() {
+    close(socket_fd);
+}
+
+void UnixSocketIPC::sendMessage(const std::string& message) {
+    send(socket_fd, message.c_str(), message.size(), 0);
+}
+
+std::string UnixSocketIPC::receiveMessage() {
+    char buffer[256];
+    memset(buffer, 0, sizeof(buffer));
+    recv(socket_fd, buffer, sizeof(buffer), 0);
+    return std::string(buffer);
+}
+```
 
 ---
 
@@ -135,32 +222,6 @@ std::string IPCManager::receiveMessage() {
     return "";
 }
 ```
-
----
-
-## 2️⃣ Command Execution Library API Specification
-
-### **Class: `CommandManager`**
-#### **Description:**
-Handles dynamic loading and execution of user-defined commands.
-
-#### **Methods:**
-```cpp
-void loadCommandsFromDirectory(const std::string& directory);
-```
-- **Description:** Loads `.so` command plugins from a specified directory.
-- **Parameters:**
-  - `directory` - Path to the directory containing command plugins.
-- **Returns:** `void`
-
-```cpp
-void executeCommand(const std::string& command, const std::vector<std::string>& args);
-```
-- **Description:** Executes a user-defined command by dynamically loading the corresponding `.so` file.
-- **Parameters:**
-  - `command` - The name of the command.
-  - `args` - A vector of command arguments.
-- **Returns:** `void`
 
 ---
 

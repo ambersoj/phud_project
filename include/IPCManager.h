@@ -3,12 +3,15 @@
 
 #include <memory>
 #include "IPCInterface.h"
+#include "IPCType.h"
 
 class IPCManager {
 private:
     std::unique_ptr<IPCInterface> ipc;
+    IPCType currentType;  // Track the selected IPC type
 public:
     void setIPCType(IPCType type);
+    IPCType getCurrentIPCType() const;  // Add this function
     void sendMessage(const std::string& message);
     std::string receiveMessage();
 };

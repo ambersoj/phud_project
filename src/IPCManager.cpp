@@ -2,9 +2,14 @@
 #include "UnixSocketIPC.h"
 
 void IPCManager::setIPCType(IPCType type) {
+    currentType = type;  // Store the selected type
     if (type == IPCType::SOCKETS) {
         ipc = std::make_unique<UnixSocketIPC>();
     }
+}
+
+IPCType IPCManager::getCurrentIPCType() const {
+    return currentType;
 }
 
 void IPCManager::sendMessage(const std::string& message) {
