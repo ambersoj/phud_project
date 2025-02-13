@@ -22,3 +22,5 @@ target_link_libraries(test_command PRIVATE Catch2::Catch2WithMain command_lib)
 enable_testing()
 add_test(NAME IPC_Test COMMAND test_ipc)
 add_test(NAME Command_Test COMMAND test_command)
+add_test(NAME SharedMemoryIPC_Test COMMAND test_shared_memory_ipc)
+

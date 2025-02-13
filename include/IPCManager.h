@@ -4,6 +4,7 @@
 #include <memory>
 #include "IPCInterface.h"
 #include "IPCType.h"
+#include "SharedMemoryIPC.h"
 
 class IPCManager {
 private:

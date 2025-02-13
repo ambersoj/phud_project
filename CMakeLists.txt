@@ -1,10 +1,12 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.16)
 project(phud_project)
 
-set(CMAKE_CXX_STANDARD 17)
+# Enable testing
+include(CTest)
 
-add_subdirectory(ipc_lib)
-add_subdirectory(command_lib)
+# Add subdirectories for modular libraries
+add_subdirectory(libs/command_lib)
+add_subdirectory(libs/ipc_lib)
 
-enable_testing()
+# Add integration tests
 add_subdirectory(tests)
