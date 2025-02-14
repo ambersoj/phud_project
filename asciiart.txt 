@@ -1,0 +1,38 @@
+
+
+TX MB/s     |                      |      RX MB/S
+DST MAC     |                      |      SRC MAC
+SRC MAC    / \                    / \     DST MAC
+IP        /   \                  /   \    IP
+         /     \                /     \
+         |     |                | RX  |
+         |     |                |  |  |
+         |     |                |  |  |
+         |     |                |  |  |
+         |     |                |  |  |
+         |     |                |  V  |
+         |     |                |     |
+         |     |                |     |
+         |     |                |     |
+         |     |                |     |
+         |  ^  |                |     |
+         |  |  |                |     |
+         |  |  |                |     |
+         |  |  |                |     |
+         |  |  |                |     |
+         \ TX  /                \     /
+          \   /                  \   /
+           \ /                    \ /
+            |                      |
+            |                      |
+
+There are colors:
+- Yellow tx
+- Blue rx
+- Green go/good
+- Red stop/bad
+- Amber warning
+- spinner spinning means waiting/listening
+- spinner idle means not active/channel dead
+- spinners travel up tx channel and down rx channel
+

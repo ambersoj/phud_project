@@ -10,6 +10,7 @@
 
 class SharedMemoryIPC : public IPCInterface {
 private:
+    bool is_writer = false;
     int shm_fd;
     char* shared_mem;
     std::string shm_name;
@@ -21,6 +22,9 @@ public:
 
     void sendMessage(const std::string& message) override;
     std::string receiveMessage() override;
+
+    void writeData(const char* data, size_t size);
+    void readData(char* buffer, size_t size);
 };
 
 #endif // SHARED_MEMORY_IPC_H

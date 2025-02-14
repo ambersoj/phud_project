@@ -166,6 +166,32 @@ test_SharedMemoryIPC/fast:
 .PHONY : test_SharedMemoryIPC/fast
 
 #=============================================================================
+# Target rules for targets named ipc_writer
+
+# Build rule for target.
+ipc_writer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ipc_writer
+.PHONY : ipc_writer
+
+# fast build rule for target.
+ipc_writer/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ipc_writer.dir/build.make tests/CMakeFiles/ipc_writer.dir/build
+.PHONY : ipc_writer/fast
+
+#=============================================================================
+# Target rules for targets named ipc_reader
+
+# Build rule for target.
+ipc_reader: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ipc_reader
+.PHONY : ipc_reader
+
+# fast build rule for target.
+ipc_reader/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ipc_reader.dir/build.make tests/CMakeFiles/ipc_reader.dir/build
+.PHONY : ipc_reader/fast
+
+#=============================================================================
 # Target rules for targets named Catch2
 
 # Build rule for target.
@@ -275,6 +301,8 @@ help:
 	@echo "... Catch2"
 	@echo "... Catch2WithMain"
 	@echo "... ipc_lib"
+	@echo "... ipc_reader"
+	@echo "... ipc_writer"
 	@echo "... test_SharedMemoryIPC"
 	@echo "... test_ipc"
 	@echo "... src/IPCManager.o"

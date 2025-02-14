@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/ipc_writer.dir/ipc_writer.cpp.o -o ipc_writer  ../libipc_lib.a -lpthread 
