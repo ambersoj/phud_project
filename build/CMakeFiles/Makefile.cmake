@@ -156,6 +156,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ipc_lib.dir/DependInfo.cmake"
   "tests/CMakeFiles/test_ipc.dir/DependInfo.cmake"
   "tests/CMakeFiles/test_SharedMemoryIPC.dir/DependInfo.cmake"
+  "tests/CMakeFiles/ipc_writer.dir/DependInfo.cmake"
+  "tests/CMakeFiles/ipc_reader.dir/DependInfo.cmake"
   "_deps/catch2-build/src/CMakeFiles/Catch2.dir/DependInfo.cmake"
   "_deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/DependInfo.cmake"
   )

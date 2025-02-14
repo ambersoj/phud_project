@@ -154,6 +154,82 @@ test_SharedMemoryIPC/fast:
 	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_SharedMemoryIPC.dir/build.make tests/CMakeFiles/test_SharedMemoryIPC.dir/build
 .PHONY : test_SharedMemoryIPC/fast
 
+# Convenience name for target.
+tests/CMakeFiles/ipc_writer.dir/rule:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ipc_writer.dir/rule
+.PHONY : tests/CMakeFiles/ipc_writer.dir/rule
+
+# Convenience name for target.
+ipc_writer: tests/CMakeFiles/ipc_writer.dir/rule
+.PHONY : ipc_writer
+
+# fast build rule for target.
+ipc_writer/fast:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ipc_writer.dir/build.make tests/CMakeFiles/ipc_writer.dir/build
+.PHONY : ipc_writer/fast
+
+# Convenience name for target.
+tests/CMakeFiles/ipc_reader.dir/rule:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ipc_reader.dir/rule
+.PHONY : tests/CMakeFiles/ipc_reader.dir/rule
+
+# Convenience name for target.
+ipc_reader: tests/CMakeFiles/ipc_reader.dir/rule
+.PHONY : ipc_reader
+
+# fast build rule for target.
+ipc_reader/fast:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ipc_reader.dir/build.make tests/CMakeFiles/ipc_reader.dir/build
+.PHONY : ipc_reader/fast
+
+ipc_reader.o: ipc_reader.cpp.o
+.PHONY : ipc_reader.o
+
+# target to build an object file
+ipc_reader.cpp.o:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ipc_reader.dir/build.make tests/CMakeFiles/ipc_reader.dir/ipc_reader.cpp.o
+.PHONY : ipc_reader.cpp.o
+
+ipc_reader.i: ipc_reader.cpp.i
+.PHONY : ipc_reader.i
+
+# target to preprocess a source file
+ipc_reader.cpp.i:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ipc_reader.dir/build.make tests/CMakeFiles/ipc_reader.dir/ipc_reader.cpp.i
+.PHONY : ipc_reader.cpp.i
+
+ipc_reader.s: ipc_reader.cpp.s
+.PHONY : ipc_reader.s
+
+# target to generate assembly for a file
+ipc_reader.cpp.s:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ipc_reader.dir/build.make tests/CMakeFiles/ipc_reader.dir/ipc_reader.cpp.s
+.PHONY : ipc_reader.cpp.s
+
+ipc_writer.o: ipc_writer.cpp.o
+.PHONY : ipc_writer.o
+
+# target to build an object file
+ipc_writer.cpp.o:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ipc_writer.dir/build.make tests/CMakeFiles/ipc_writer.dir/ipc_writer.cpp.o
+.PHONY : ipc_writer.cpp.o
+
+ipc_writer.i: ipc_writer.cpp.i
+.PHONY : ipc_writer.i
+
+# target to preprocess a source file
+ipc_writer.cpp.i:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ipc_writer.dir/build.make tests/CMakeFiles/ipc_writer.dir/ipc_writer.cpp.i
+.PHONY : ipc_writer.cpp.i
+
+ipc_writer.s: ipc_writer.cpp.s
+.PHONY : ipc_writer.s
+
+# target to generate assembly for a file
+ipc_writer.cpp.s:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ipc_writer.dir/build.make tests/CMakeFiles/ipc_writer.dir/ipc_writer.cpp.s
+.PHONY : ipc_writer.cpp.s
+
 test_SharedMemoryIPC.o: test_SharedMemoryIPC.cpp.o
 .PHONY : test_SharedMemoryIPC.o
 
@@ -211,8 +287,16 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... ipc_reader"
+	@echo "... ipc_writer"
 	@echo "... test_SharedMemoryIPC"
 	@echo "... test_ipc"
+	@echo "... ipc_reader.o"
+	@echo "... ipc_reader.i"
+	@echo "... ipc_reader.s"
+	@echo "... ipc_writer.o"
+	@echo "... ipc_writer.i"
+	@echo "... ipc_writer.s"
 	@echo "... test_SharedMemoryIPC.o"
 	@echo "... test_SharedMemoryIPC.i"
 	@echo "... test_SharedMemoryIPC.s"

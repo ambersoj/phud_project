@@ -4,6 +4,8 @@
 /usr/local/phud_project/build/CMakeFiles/rebuild_cache.dir
 /usr/local/phud_project/build/tests/CMakeFiles/test_ipc.dir
 /usr/local/phud_project/build/tests/CMakeFiles/test_SharedMemoryIPC.dir
+/usr/local/phud_project/build/tests/CMakeFiles/ipc_writer.dir
+/usr/local/phud_project/build/tests/CMakeFiles/ipc_reader.dir
 /usr/local/phud_project/build/tests/CMakeFiles/test.dir
 /usr/local/phud_project/build/tests/CMakeFiles/edit_cache.dir
 /usr/local/phud_project/build/tests/CMakeFiles/rebuild_cache.dir
