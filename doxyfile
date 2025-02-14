@@ -1,0 +1,43 @@
+# Doxygen configuration file for PHUD Project
+
+# Project Info
+PROJECT_NAME           = "PHUD Project"
+PROJECT_BRIEF          = "Packet Heads-Up Display with IPC and Command Execution"
+OUTPUT_DIRECTORY       = "docs/api"
+
+# Source Code Paths
+INPUT                  = "include src libs tests"
+FILE_PATTERNS          = "*.h *.cpp"
+RECURSIVE              = YES
+
+# Documentation Output
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+GENERATE_MAN           = NO
+GENERATE_XML           = NO
+GENERATE_MARKDOWN      = YES
+GENERATE_TREEVIEW      = YES
+
+# Extract Documentation from Code
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = NO
+
+# Additional Options
+INLINE_INFO            = YES
+HIDE_UNDOC_MEMBERS     = NO
+HIDE_UNDOC_CLASSES     = NO
+
+# Markdown Support
+ENABLE_PREPROCESSING   = YES
+MARKDOWN_SUPPORT       = YES
+
+# Call Graphs and Diagrams
+HAVE_DOT               = YES
+DOT_IMAGE_FORMAT       = png
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+CLASS_DIAGRAMS         = YES
+
+# Indexing
+SEARCHENGINE           = YES
