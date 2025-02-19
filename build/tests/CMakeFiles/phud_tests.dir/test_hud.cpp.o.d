@@ -412,5 +412,7 @@ tests/CMakeFiles/phud_tests.dir/test_hud.cpp.o: \
  /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/reporters/catch_reporter_tap.hpp \
  /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/reporters/catch_reporter_teamcity.hpp \
  /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/reporters/catch_reporter_xml.hpp \
- /usr/local/phud_project/include/hud.hpp \
- /usr/local/phud_project/include/PacketInfo.hpp
+ /usr/local/phud_project/tests/../include/hud.hpp \
+ /usr/local/phud_project/tests/../include/PacketInfo.hpp \
+ /usr/local/phud_project/tests/../include/SharedMemoryIPC.hpp \
+ /usr/local/phud_project/tests/../include/IPCInterface.hpp

@@ -1,16 +1,18 @@
 #include <catch2/catch_all.hpp>
 #include "../include/IPCManager.hpp"
 
-TEST_CASE("IPC Initialization", "[ipc]") {
+TEST_CASE("IPC Communication", "[ipc]") {
     IPCManager ipc;
-    REQUIRE_NOTHROW(ipc.initialize());
-}
+    
+    SECTION("Initialize IPC") {
+        REQUIRE_NOTHROW(ipc.initialize());
+    }
 
-TEST_CASE("IPC Data Transfer", "[ipc]") {
-    IPCManager ipc;
-    ipc.initialize();
+    SECTION("Write and Read Data") {
+        ipc.initialize();
+        std::string data = "Hello, IPC!";
+        ipc.writeData(data);
 
-    std::string testData = "Hello, IPC!";
-    ipc.writeData(testData);
-    REQUIRE(ipc.readData() == testData);
+        REQUIRE(ipc.readData() == data);
+    }
 }

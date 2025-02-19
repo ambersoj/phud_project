@@ -2,6 +2,7 @@
 #define HUD_HPP
 
 #include "PacketInfo.hpp"
+#include "SharedMemoryIPC.hpp"
 
 class Hud {
 public:
@@ -10,11 +11,13 @@ public:
 
     void initialize();
     void render();
-    void update(const PacketInfo& packet);
-    PacketInfo getLastPacket() const;
+    void update();
+
+    PacketInfo getLastPacket() const;  // ✅ Restored for testing
 
 private:
-    PacketInfo lastPacket;
+    SharedMemoryIPC sharedMemory;
+    PacketInfo lastPacket;  // ✅ Keep track of last received packet
 };
 
 #endif // HUD_HPP

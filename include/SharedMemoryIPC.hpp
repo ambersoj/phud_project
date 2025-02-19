@@ -3,28 +3,19 @@
 
 #include "IPCInterface.hpp"
 #include <string>
-#include <fcntl.h>       // O_* constants
-#include <sys/mman.h>    // mmap
-#include <unistd.h>      // ftruncate
-#include <semaphore.h>   // POSIX semaphores
 
-class SharedMemoryIPC : public IPCInterface {
-private:
-    bool is_writer = false;
-    int shm_fd;
-    char* shared_mem;
-    std::string shm_name;
-    sem_t* semaphore;
-
+class SharedMemoryIPC : public IPCInterface {  // ✅ FIXED: Correct inheritance
 public:
-    SharedMemoryIPC(const std::string& name = "/phud_shm");
+    SharedMemoryIPC();
     ~SharedMemoryIPC();
 
-    void sendMessage(const std::string& message) override;
-    std::string receiveMessage() override;
+    void initialize() override;  // ✅ Use initialize() instead of connect()
+    void sendMessage(const std::string& message) override;  // ✅ FIXED
+    std::string receiveMessage() override;  // ✅ FIXED
 
-    void writeData(const char* data, size_t size);
-    void readData(char* buffer, size_t size);
+private:
+    int shmid;
+    void* shmaddr;
 };
 
-#endif // SHARED_MEMORY_IPC_H
+#endif // SHARED_MEMORY_IPC_HPP

@@ -1,28 +1,41 @@
-Start testing: Feb 18 18:59 CST
+Start testing: Feb 18 23:43 CST
 ----------------------------------------------------------
 1/1 Testing: PhudTests
 1/1 Test: PhudTests
 Command: "/usr/local/phud_project/build/tests/phud_tests"
 Directory: /usr/local/phud_project/build/tests
-"PhudTests" start time: Feb 18 18:59 CST
+"PhudTests" start time: Feb 18 23:43 CST
 Output:
 ----------------------------------------------------------
-Randomness seeded to: 439597349
+Randomness seeded to: 3126972424
+SharedMemoryIPC Constructor
 HUD Initialized
+Initializing shared memory IPC...
+SharedMemoryIPC Destructor
+SharedMemoryIPC Constructor
+HUD Initialized
+Initializing shared memory IPC...
 Rendering HUD
+Writing message to shared memory: Packet data
+SharedMemoryIPC Destructor
+SharedMemoryIPC Constructor
+HUD Initialized
+Initializing shared memory IPC...
 Updating HUD with new packet info
-Initializing network capture on interface: eno1
-Initializing network capture on interface: eno1
+Reading message from shared memory
+SharedMemoryIPC Destructor
+Initializing network capture on interface: eth0
+Initializing network capture on interface: eth0
 Capturing packet...
 ===============================================================================
-All tests passed (5 assertions in 5 test cases)
+All tests passed (7 assertions in 4 test cases)
 
 <end of output>
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"PhudTests" end time: Feb 18 18:59 CST
+"PhudTests" end time: Feb 18 23:43 CST
 "PhudTests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Feb 18 18:59 CST
+End testing: Feb 18 23:43 CST

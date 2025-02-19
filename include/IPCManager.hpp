@@ -1,19 +1,21 @@
 #ifndef IPC_MANAGER_HPP
 #define IPC_MANAGER_HPP
 
-#include <memory>
 #include "IPCInterface.hpp"
-#include "IPCType.hpp"
+#include "PacketInfo.hpp"
+#include <memory>
 
 class IPCManager {
-private:
-    std::unique_ptr<IPCInterface> ipc;
-    IPCType currentType;
 public:
-    void setIPCType(IPCType type);
-    IPCType getCurrentIPCType() const;
-    void sendMessage(const std::string& message);
-    std::string receiveMessage();
+    IPCManager();
+    ~IPCManager();
+
+    void initialize();
+    void sendPacket(const std::string& message);  // ✅ FIXED: Matches IPCInterface
+    std::string receivePacket(); // ✅ FIXED: Matches IPCInterface
+
+private:
+    std::unique_ptr<IPCInterface> ipc; // ✅ FIXED: Polymorphic pointer
 };
 
-#endif // IPC_MANAGER_H
+#endif // IPC_MANAGER_HPP

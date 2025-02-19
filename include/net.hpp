@@ -1,8 +1,8 @@
 #ifndef NET_HPP
 #define NET_HPP
 
-#include "PacketInfo.hpp"
 #include <string>
+#include "PacketInfo.hpp"
 
 class Net {
 public:
@@ -10,7 +10,7 @@ public:
     ~Net() = default;
 
     void initialize(const std::string& interface);
-    PacketInfo capturePacket();
+    PacketInfo capturePacket();  // ✅ Ensure this is declared
 
 private:
     std::string netInterface;

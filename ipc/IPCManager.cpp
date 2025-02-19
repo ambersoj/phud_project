@@ -1,29 +1,25 @@
 #include "IPCManager.hpp"
-#include "UnixSocketIPC.hpp"
 #include "SharedMemoryIPC.hpp"
+#include <iostream>
 
-void IPCManager::setIPCType(IPCType type) {
-    currentType = type;
-    if (type == IPCType::SOCKETS) {
-        ipc = std::make_unique<UnixSocketIPC>();
-    } else if (type == IPCType::SHARED_MEMORY) {
-        ipc = std::make_unique<SharedMemoryIPC>();
-    }
+IPCManager::IPCManager() {
+    std::cout << "IPCManager Constructor" << std::endl;
 }
 
-IPCType IPCManager::getCurrentIPCType() const {
-    return currentType;
+IPCManager::~IPCManager() {
+    std::cout << "IPCManager Destructor" << std::endl;
 }
 
-void IPCManager::sendMessage(const std::string& message) {
-    if (ipc) {
-        ipc->sendMessage(message);
-    }
+void IPCManager::initialize() {
+    std::cout << "Initializing IPC Manager..." << std::endl;
+    ipc = std::make_unique<SharedMemoryIPC>(); // ✅ Now works with IPCInterface
+    ipc->initialize();  // ✅ FIXED: This works because initialize() is in IPCInterface
 }
 
-std::string IPCManager::receiveMessage() {
-    if (ipc) {
-        return ipc->receiveMessage();
-    }
-    return "";
+void IPCManager::sendPacket(const std::string& message) {
+    ipc->sendMessage(message);
+}
+
+std::string IPCManager::receivePacket() {
+    return ipc->receiveMessage();
 }
