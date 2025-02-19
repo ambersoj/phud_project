@@ -178,6 +178,30 @@ catch2/benchmark/catch_chronometer.cpp.s:
 	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/benchmark/catch_chronometer.cpp.s
 .PHONY : catch2/benchmark/catch_chronometer.cpp.s
 
+catch2/benchmark/detail/catch_analyse.o: catch2/benchmark/detail/catch_analyse.cpp.o
+.PHONY : catch2/benchmark/detail/catch_analyse.o
+
+# target to build an object file
+catch2/benchmark/detail/catch_analyse.cpp.o:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_analyse.cpp.o
+.PHONY : catch2/benchmark/detail/catch_analyse.cpp.o
+
+catch2/benchmark/detail/catch_analyse.i: catch2/benchmark/detail/catch_analyse.cpp.i
+.PHONY : catch2/benchmark/detail/catch_analyse.i
+
+# target to preprocess a source file
+catch2/benchmark/detail/catch_analyse.cpp.i:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_analyse.cpp.i
+.PHONY : catch2/benchmark/detail/catch_analyse.cpp.i
+
+catch2/benchmark/detail/catch_analyse.s: catch2/benchmark/detail/catch_analyse.cpp.s
+.PHONY : catch2/benchmark/detail/catch_analyse.s
+
+# target to generate assembly for a file
+catch2/benchmark/detail/catch_analyse.cpp.s:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/benchmark/detail/catch_analyse.cpp.s
+.PHONY : catch2/benchmark/detail/catch_analyse.cpp.s
+
 catch2/benchmark/detail/catch_benchmark_function.o: catch2/benchmark/detail/catch_benchmark_function.cpp.o
 .PHONY : catch2/benchmark/detail/catch_benchmark_function.o
 
@@ -562,6 +586,30 @@ catch2/catch_totals.cpp.s:
 	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_totals.cpp.s
 .PHONY : catch2/catch_totals.cpp.s
 
+catch2/catch_translate_exception.o: catch2/catch_translate_exception.cpp.o
+.PHONY : catch2/catch_translate_exception.o
+
+# target to build an object file
+catch2/catch_translate_exception.cpp.o:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_translate_exception.cpp.o
+.PHONY : catch2/catch_translate_exception.cpp.o
+
+catch2/catch_translate_exception.i: catch2/catch_translate_exception.cpp.i
+.PHONY : catch2/catch_translate_exception.i
+
+# target to preprocess a source file
+catch2/catch_translate_exception.cpp.i:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_translate_exception.cpp.i
+.PHONY : catch2/catch_translate_exception.cpp.i
+
+catch2/catch_translate_exception.s: catch2/catch_translate_exception.cpp.s
+.PHONY : catch2/catch_translate_exception.s
+
+# target to generate assembly for a file
+catch2/catch_translate_exception.cpp.s:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_translate_exception.cpp.s
+.PHONY : catch2/catch_translate_exception.cpp.s
+
 catch2/catch_version.o: catch2/catch_version.cpp.o
 .PHONY : catch2/catch_version.o
 
@@ -825,30 +873,6 @@ catch2/interfaces/catch_interfaces_reporter_factory.s: catch2/interfaces/catch_i
 catch2/interfaces/catch_interfaces_reporter_factory.cpp.s:
 	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_reporter_factory.cpp.s
 .PHONY : catch2/interfaces/catch_interfaces_reporter_factory.cpp.s
-
-catch2/interfaces/catch_interfaces_reporter_registry.o: catch2/interfaces/catch_interfaces_reporter_registry.cpp.o
-.PHONY : catch2/interfaces/catch_interfaces_reporter_registry.o
-
-# target to build an object file
-catch2/interfaces/catch_interfaces_reporter_registry.cpp.o:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_reporter_registry.cpp.o
-.PHONY : catch2/interfaces/catch_interfaces_reporter_registry.cpp.o
-
-catch2/interfaces/catch_interfaces_reporter_registry.i: catch2/interfaces/catch_interfaces_reporter_registry.cpp.i
-.PHONY : catch2/interfaces/catch_interfaces_reporter_registry.i
-
-# target to preprocess a source file
-catch2/interfaces/catch_interfaces_reporter_registry.cpp.i:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_reporter_registry.cpp.i
-.PHONY : catch2/interfaces/catch_interfaces_reporter_registry.cpp.i
-
-catch2/interfaces/catch_interfaces_reporter_registry.s: catch2/interfaces/catch_interfaces_reporter_registry.cpp.s
-.PHONY : catch2/interfaces/catch_interfaces_reporter_registry.s
-
-# target to generate assembly for a file
-catch2/interfaces/catch_interfaces_reporter_registry.cpp.s:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/interfaces/catch_interfaces_reporter_registry.cpp.s
-.PHONY : catch2/interfaces/catch_interfaces_reporter_registry.cpp.s
 
 catch2/interfaces/catch_interfaces_testcase.o: catch2/interfaces/catch_interfaces_testcase.cpp.o
 .PHONY : catch2/interfaces/catch_interfaces_testcase.o
@@ -1282,6 +1306,30 @@ catch2/internal/catch_istream.cpp.s:
 	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_istream.cpp.s
 .PHONY : catch2/internal/catch_istream.cpp.s
 
+catch2/internal/catch_jsonwriter.o: catch2/internal/catch_jsonwriter.cpp.o
+.PHONY : catch2/internal/catch_jsonwriter.o
+
+# target to build an object file
+catch2/internal/catch_jsonwriter.cpp.o:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_jsonwriter.cpp.o
+.PHONY : catch2/internal/catch_jsonwriter.cpp.o
+
+catch2/internal/catch_jsonwriter.i: catch2/internal/catch_jsonwriter.cpp.i
+.PHONY : catch2/internal/catch_jsonwriter.i
+
+# target to preprocess a source file
+catch2/internal/catch_jsonwriter.cpp.i:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_jsonwriter.cpp.i
+.PHONY : catch2/internal/catch_jsonwriter.cpp.i
+
+catch2/internal/catch_jsonwriter.s: catch2/internal/catch_jsonwriter.cpp.s
+.PHONY : catch2/internal/catch_jsonwriter.s
+
+# target to generate assembly for a file
+catch2/internal/catch_jsonwriter.cpp.s:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_jsonwriter.cpp.s
+.PHONY : catch2/internal/catch_jsonwriter.cpp.s
+
 catch2/internal/catch_lazy_expr.o: catch2/internal/catch_lazy_expr.cpp.o
 .PHONY : catch2/internal/catch_lazy_expr.o
 
@@ -1569,30 +1617,6 @@ catch2/internal/catch_reporter_spec_parser.s: catch2/internal/catch_reporter_spe
 catch2/internal/catch_reporter_spec_parser.cpp.s:
 	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_reporter_spec_parser.cpp.s
 .PHONY : catch2/internal/catch_reporter_spec_parser.cpp.s
-
-catch2/internal/catch_result_type.o: catch2/internal/catch_result_type.cpp.o
-.PHONY : catch2/internal/catch_result_type.o
-
-# target to build an object file
-catch2/internal/catch_result_type.cpp.o:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_result_type.cpp.o
-.PHONY : catch2/internal/catch_result_type.cpp.o
-
-catch2/internal/catch_result_type.i: catch2/internal/catch_result_type.cpp.i
-.PHONY : catch2/internal/catch_result_type.i
-
-# target to preprocess a source file
-catch2/internal/catch_result_type.cpp.i:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_result_type.cpp.i
-.PHONY : catch2/internal/catch_result_type.cpp.i
-
-catch2/internal/catch_result_type.s: catch2/internal/catch_result_type.cpp.s
-.PHONY : catch2/internal/catch_result_type.s
-
-# target to generate assembly for a file
-catch2/internal/catch_result_type.cpp.s:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/internal/catch_result_type.cpp.s
-.PHONY : catch2/internal/catch_result_type.cpp.s
 
 catch2/internal/catch_reusable_string_stream.o: catch2/internal/catch_reusable_string_stream.cpp.o
 .PHONY : catch2/internal/catch_reusable_string_stream.o
@@ -2458,6 +2482,30 @@ catch2/reporters/catch_reporter_helpers.cpp.s:
 	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_helpers.cpp.s
 .PHONY : catch2/reporters/catch_reporter_helpers.cpp.s
 
+catch2/reporters/catch_reporter_json.o: catch2/reporters/catch_reporter_json.cpp.o
+.PHONY : catch2/reporters/catch_reporter_json.o
+
+# target to build an object file
+catch2/reporters/catch_reporter_json.cpp.o:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_json.cpp.o
+.PHONY : catch2/reporters/catch_reporter_json.cpp.o
+
+catch2/reporters/catch_reporter_json.i: catch2/reporters/catch_reporter_json.cpp.i
+.PHONY : catch2/reporters/catch_reporter_json.i
+
+# target to preprocess a source file
+catch2/reporters/catch_reporter_json.cpp.i:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_json.cpp.i
+.PHONY : catch2/reporters/catch_reporter_json.cpp.i
+
+catch2/reporters/catch_reporter_json.s: catch2/reporters/catch_reporter_json.cpp.s
+.PHONY : catch2/reporters/catch_reporter_json.s
+
+# target to generate assembly for a file
+catch2/reporters/catch_reporter_json.cpp.s:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/reporters/catch_reporter_json.cpp.s
+.PHONY : catch2/reporters/catch_reporter_json.cpp.s
+
 catch2/reporters/catch_reporter_junit.o: catch2/reporters/catch_reporter_junit.cpp.o
 .PHONY : catch2/reporters/catch_reporter_junit.o
 
@@ -2664,6 +2712,9 @@ help:
 	@echo "... catch2/benchmark/catch_chronometer.o"
 	@echo "... catch2/benchmark/catch_chronometer.i"
 	@echo "... catch2/benchmark/catch_chronometer.s"
+	@echo "... catch2/benchmark/detail/catch_analyse.o"
+	@echo "... catch2/benchmark/detail/catch_analyse.i"
+	@echo "... catch2/benchmark/detail/catch_analyse.s"
 	@echo "... catch2/benchmark/detail/catch_benchmark_function.o"
 	@echo "... catch2/benchmark/detail/catch_benchmark_function.i"
 	@echo "... catch2/benchmark/detail/catch_benchmark_function.s"
@@ -2712,6 +2763,9 @@ help:
 	@echo "... catch2/catch_totals.o"
 	@echo "... catch2/catch_totals.i"
 	@echo "... catch2/catch_totals.s"
+	@echo "... catch2/catch_translate_exception.o"
+	@echo "... catch2/catch_translate_exception.i"
+	@echo "... catch2/catch_translate_exception.s"
 	@echo "... catch2/catch_version.o"
 	@echo "... catch2/catch_version.i"
 	@echo "... catch2/catch_version.s"
@@ -2745,9 +2799,6 @@ help:
 	@echo "... catch2/interfaces/catch_interfaces_reporter_factory.o"
 	@echo "... catch2/interfaces/catch_interfaces_reporter_factory.i"
 	@echo "... catch2/interfaces/catch_interfaces_reporter_factory.s"
-	@echo "... catch2/interfaces/catch_interfaces_reporter_registry.o"
-	@echo "... catch2/interfaces/catch_interfaces_reporter_registry.i"
-	@echo "... catch2/interfaces/catch_interfaces_reporter_registry.s"
 	@echo "... catch2/interfaces/catch_interfaces_testcase.o"
 	@echo "... catch2/interfaces/catch_interfaces_testcase.i"
 	@echo "... catch2/interfaces/catch_interfaces_testcase.s"
@@ -2802,6 +2853,9 @@ help:
 	@echo "... catch2/internal/catch_istream.o"
 	@echo "... catch2/internal/catch_istream.i"
 	@echo "... catch2/internal/catch_istream.s"
+	@echo "... catch2/internal/catch_jsonwriter.o"
+	@echo "... catch2/internal/catch_jsonwriter.i"
+	@echo "... catch2/internal/catch_jsonwriter.s"
 	@echo "... catch2/internal/catch_lazy_expr.o"
 	@echo "... catch2/internal/catch_lazy_expr.i"
 	@echo "... catch2/internal/catch_lazy_expr.s"
@@ -2838,9 +2892,6 @@ help:
 	@echo "... catch2/internal/catch_reporter_spec_parser.o"
 	@echo "... catch2/internal/catch_reporter_spec_parser.i"
 	@echo "... catch2/internal/catch_reporter_spec_parser.s"
-	@echo "... catch2/internal/catch_result_type.o"
-	@echo "... catch2/internal/catch_result_type.i"
-	@echo "... catch2/internal/catch_result_type.s"
 	@echo "... catch2/internal/catch_reusable_string_stream.o"
 	@echo "... catch2/internal/catch_reusable_string_stream.i"
 	@echo "... catch2/internal/catch_reusable_string_stream.s"
@@ -2949,6 +3000,9 @@ help:
 	@echo "... catch2/reporters/catch_reporter_helpers.o"
 	@echo "... catch2/reporters/catch_reporter_helpers.i"
 	@echo "... catch2/reporters/catch_reporter_helpers.s"
+	@echo "... catch2/reporters/catch_reporter_json.o"
+	@echo "... catch2/reporters/catch_reporter_json.i"
+	@echo "... catch2/reporters/catch_reporter_json.s"
 	@echo "... catch2/reporters/catch_reporter_junit.o"
 	@echo "... catch2/reporters/catch_reporter_junit.i"
 	@echo "... catch2/reporters/catch_reporter_junit.s"

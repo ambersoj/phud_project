@@ -169,9 +169,27 @@
 #endif
 
 
+/* #undef CATCH_CONFIG_EXPERIMENTAL_STATIC_ANALYSIS_SUPPORT */
+/* #undef CATCH_CONFIG_NO_EXPERIMENTAL_STATIC_ANALYSIS_SUPPORT */
+
+#if defined( CATCH_CONFIG_EXPERIMENTAL_STATIC_ANALYSIS_SUPPORT ) && \
+    defined( CATCH_CONFIG_NO_EXPERIMENTAL_STATIC_ANALYSIS_SUPPORT )
+#    error Cannot force STATIC_ANALYSIS_SUPPORT to both ON and OFF
+#endif
+
+
+/* #undef CATCH_CONFIG_USE_BUILTIN_CONSTANT_P */
+/* #undef CATCH_CONFIG_NO_USE_BUILTIN_CONSTANT_P */
+
+#if defined( CATCH_CONFIG_USE_BUILTIN_CONSTANT_P ) && \
+    defined( CATCH_CONFIG_NO_USE_BUILTIN_CONSTANT_P )
+#    error Cannot force USE_BUILTIN_CONSTANT_P to both ON and OFF
+#endif
+
+
 // ------
 // Simple toggle defines
-// their value is never used and they cannot be overriden
+// their value is never used and they cannot be overridden
 // ------
 
 
@@ -189,6 +207,7 @@
 /* #undef CATCH_CONFIG_FAST_COMPILE */
 /* #undef CATCH_CONFIG_NOSTDOUT */
 /* #undef CATCH_CONFIG_PREFIX_ALL */
+/* #undef CATCH_CONFIG_PREFIX_MESSAGES */
 /* #undef CATCH_CONFIG_WINDOWS_CRTDBG */
 
 /* #undef CATCH_CONFIG_SHARED_LIBRARY */

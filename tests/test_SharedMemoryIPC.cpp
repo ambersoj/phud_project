@@ -1,5 +1,5 @@
 #include <catch2/catch_test_macros.hpp>
-#include "SharedMemoryIPC.h"
+#include "SharedMemoryIPC.hpp"
 
 TEST_CASE("Shared Memory IPC Test", "[SharedMemoryIPC]") {
     SharedMemoryIPC sender("/test_shm");

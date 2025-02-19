@@ -164,18 +164,14 @@ _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_registry_hub.cpp.o: \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc \
  /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/internal/catch_test_case_registry_impl.hpp \
- /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/internal/catch_test_registry.hpp \
  /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/interfaces/catch_interfaces_testcase.hpp \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
+ /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/interfaces/catch_interfaces_config.hpp \
  /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/internal/catch_stringref.hpp \
  /usr/include/c++/13/cstring /usr/include/string.h /usr/include/strings.h \
- /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/internal/catch_unique_name.hpp \
- /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/internal/catch_config_counter.hpp \
- /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/internal/catch_preprocessor_remove_parens.hpp \
- /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/interfaces/catch_interfaces_config.hpp \
  /usr/include/c++/13/chrono /usr/include/c++/13/bits/chrono.h \
  /usr/include/c++/13/ratio /usr/include/c++/13/cstdint \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
@@ -184,25 +180,13 @@ _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_registry_hub.cpp.o: \
  /usr/include/c++/13/limits /usr/include/c++/13/ctime \
  /usr/include/c++/13/bits/parse_numbers.h \
  /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/internal/catch_reporter_registry.hpp \
- /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/interfaces/catch_interfaces_reporter.hpp \
- /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/catch_section_info.hpp \
- /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/catch_totals.hpp \
- /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/catch_assertion_result.hpp \
- /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/catch_assertion_info.hpp \
- /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/internal/catch_result_type.hpp \
- /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/internal/catch_lazy_expr.hpp \
- /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/internal/catch_message_info.hpp \
- /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/interfaces/catch_interfaces_capture.hpp \
- /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/benchmark/catch_estimate.hpp \
- /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/benchmark/catch_outlier_classification.hpp \
+ /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/internal/catch_case_insensitive_comparisons.hpp \
  /usr/include/c++/13/map /usr/include/c++/13/bits/stl_tree.h \
  /usr/include/c++/13/ext/aligned_buffer.h \
  /usr/include/c++/13/bits/node_handle.h \
  /usr/include/c++/13/bits/stl_map.h \
  /usr/include/c++/13/bits/stl_multimap.h \
  /usr/include/c++/13/bits/erase_if.h \
- /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/interfaces/catch_interfaces_reporter_registry.hpp \
- /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/internal/catch_case_insensitive_comparisons.hpp \
  /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/internal/catch_exception_translator_registry.hpp \
  /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/interfaces/catch_interfaces_exception.hpp \
  /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/internal/catch_tag_alias_registry.hpp \
@@ -213,4 +197,5 @@ _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/catch_registry_hub.cpp.o: \
  /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/internal/catch_enum_values_registry.hpp \
  /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/interfaces/catch_interfaces_enum_values_registry.hpp \
  /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/catch_test_case_info.hpp \
+ /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/interfaces/catch_interfaces_test_invoker.hpp \
  /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/interfaces/catch_interfaces_reporter_factory.hpp

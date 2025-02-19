@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/ipc_reader.dir/ipc_reader.cpp.o -o ipc_reader  ../libipc_lib.a -lpthread 

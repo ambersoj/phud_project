@@ -41,12 +41,12 @@ endif()
 
 execute_process(
   COMMAND "/usr/bin/git"
-          checkout "v3.3.2" --
+          checkout "v3.8.0" --
   WORKING_DIRECTORY "/usr/local/phud_project/build/_deps/catch2-src"
   RESULT_VARIABLE error_code
 )
 if(error_code)
-  message(FATAL_ERROR "Failed to checkout tag: 'v3.3.2'")
+  message(FATAL_ERROR "Failed to checkout tag: 'v3.8.0'")
 endif()
 
 set(init_submodules TRUE)

@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/phud_tests.dir/test_main.cpp.o CMakeFiles/phud_tests.dir/test_hud.cpp.o CMakeFiles/phud_tests.dir/test_net.cpp.o -o phud_tests  ../hud/libhud.a ../net/libnet.a ../_deps/catch2-build/src/libCatch2Main.a ../ipc/libipc.a -lpthread ../_deps/catch2-build/src/libCatch2.a 

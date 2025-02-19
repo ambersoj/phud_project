@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cstring>
-#include "../include/SharedMemoryIPC.h"
+#include "../include/SharedMemoryIPC.hpp"
 
 int main() {
     SharedMemoryIPC ipc("/phud_shm");

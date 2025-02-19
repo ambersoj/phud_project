@@ -1,0 +1,2 @@
+/usr/bin/ar qc libhud.a CMakeFiles/hud.dir/hud.cpp.o
+/usr/bin/ranlib libhud.a

@@ -1,0 +1,28 @@
+Start testing: Feb 18 18:59 CST
+----------------------------------------------------------
+1/1 Testing: PhudTests
+1/1 Test: PhudTests
+Command: "/usr/local/phud_project/build/tests/phud_tests"
+Directory: /usr/local/phud_project/build/tests
+"PhudTests" start time: Feb 18 18:59 CST
+Output:
+----------------------------------------------------------
+Randomness seeded to: 439597349
+HUD Initialized
+Rendering HUD
+Updating HUD with new packet info
+Initializing network capture on interface: eno1
+Initializing network capture on interface: eno1
+Capturing packet...
+===============================================================================
+All tests passed (5 assertions in 5 test cases)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"PhudTests" end time: Feb 18 18:59 CST
+"PhudTests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Feb 18 18:59 CST

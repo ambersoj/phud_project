@@ -44,6 +44,10 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
+  include("/usr/local/phud_project/build/_deps/catch2-build/cmake_install.cmake")
+  include("/usr/local/phud_project/build/ipc/cmake_install.cmake")
+  include("/usr/local/phud_project/build/hud/cmake_install.cmake")
+  include("/usr/local/phud_project/build/net/cmake_install.cmake")
   include("/usr/local/phud_project/build/tests/cmake_install.cmake")
 
 endif()

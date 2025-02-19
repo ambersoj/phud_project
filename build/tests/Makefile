@@ -127,156 +127,482 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-tests/CMakeFiles/test_ipc.dir/rule:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_ipc.dir/rule
-.PHONY : tests/CMakeFiles/test_ipc.dir/rule
+tests/CMakeFiles/phud_tests.dir/rule:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/phud_tests.dir/rule
+.PHONY : tests/CMakeFiles/phud_tests.dir/rule
 
 # Convenience name for target.
-test_ipc: tests/CMakeFiles/test_ipc.dir/rule
-.PHONY : test_ipc
+phud_tests: tests/CMakeFiles/phud_tests.dir/rule
+.PHONY : phud_tests
 
 # fast build rule for target.
-test_ipc/fast:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ipc.dir/build.make tests/CMakeFiles/test_ipc.dir/build
-.PHONY : test_ipc/fast
+phud_tests/fast:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/phud_tests.dir/build.make tests/CMakeFiles/phud_tests.dir/build
+.PHONY : phud_tests/fast
 
 # Convenience name for target.
-tests/CMakeFiles/test_SharedMemoryIPC.dir/rule:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_SharedMemoryIPC.dir/rule
-.PHONY : tests/CMakeFiles/test_SharedMemoryIPC.dir/rule
+tests/CMakeFiles/Experimental.dir/rule:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/Experimental.dir/rule
+.PHONY : tests/CMakeFiles/Experimental.dir/rule
 
 # Convenience name for target.
-test_SharedMemoryIPC: tests/CMakeFiles/test_SharedMemoryIPC.dir/rule
-.PHONY : test_SharedMemoryIPC
+Experimental: tests/CMakeFiles/Experimental.dir/rule
+.PHONY : Experimental
 
 # fast build rule for target.
-test_SharedMemoryIPC/fast:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_SharedMemoryIPC.dir/build.make tests/CMakeFiles/test_SharedMemoryIPC.dir/build
-.PHONY : test_SharedMemoryIPC/fast
+Experimental/fast:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/Experimental.dir/build.make tests/CMakeFiles/Experimental.dir/build
+.PHONY : Experimental/fast
 
 # Convenience name for target.
-tests/CMakeFiles/ipc_writer.dir/rule:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ipc_writer.dir/rule
-.PHONY : tests/CMakeFiles/ipc_writer.dir/rule
+tests/CMakeFiles/Nightly.dir/rule:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/Nightly.dir/rule
+.PHONY : tests/CMakeFiles/Nightly.dir/rule
 
 # Convenience name for target.
-ipc_writer: tests/CMakeFiles/ipc_writer.dir/rule
-.PHONY : ipc_writer
+Nightly: tests/CMakeFiles/Nightly.dir/rule
+.PHONY : Nightly
 
 # fast build rule for target.
-ipc_writer/fast:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ipc_writer.dir/build.make tests/CMakeFiles/ipc_writer.dir/build
-.PHONY : ipc_writer/fast
+Nightly/fast:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/Nightly.dir/build.make tests/CMakeFiles/Nightly.dir/build
+.PHONY : Nightly/fast
 
 # Convenience name for target.
-tests/CMakeFiles/ipc_reader.dir/rule:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ipc_reader.dir/rule
-.PHONY : tests/CMakeFiles/ipc_reader.dir/rule
+tests/CMakeFiles/Continuous.dir/rule:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/Continuous.dir/rule
+.PHONY : tests/CMakeFiles/Continuous.dir/rule
 
 # Convenience name for target.
-ipc_reader: tests/CMakeFiles/ipc_reader.dir/rule
-.PHONY : ipc_reader
+Continuous: tests/CMakeFiles/Continuous.dir/rule
+.PHONY : Continuous
 
 # fast build rule for target.
-ipc_reader/fast:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ipc_reader.dir/build.make tests/CMakeFiles/ipc_reader.dir/build
-.PHONY : ipc_reader/fast
+Continuous/fast:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/Continuous.dir/build.make tests/CMakeFiles/Continuous.dir/build
+.PHONY : Continuous/fast
 
-ipc_reader.o: ipc_reader.cpp.o
-.PHONY : ipc_reader.o
+# Convenience name for target.
+tests/CMakeFiles/NightlyMemoryCheck.dir/rule:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/NightlyMemoryCheck.dir/rule
+.PHONY : tests/CMakeFiles/NightlyMemoryCheck.dir/rule
+
+# Convenience name for target.
+NightlyMemoryCheck: tests/CMakeFiles/NightlyMemoryCheck.dir/rule
+.PHONY : NightlyMemoryCheck
+
+# fast build rule for target.
+NightlyMemoryCheck/fast:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/NightlyMemoryCheck.dir/build.make tests/CMakeFiles/NightlyMemoryCheck.dir/build
+.PHONY : NightlyMemoryCheck/fast
+
+# Convenience name for target.
+tests/CMakeFiles/NightlyStart.dir/rule:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/NightlyStart.dir/rule
+.PHONY : tests/CMakeFiles/NightlyStart.dir/rule
+
+# Convenience name for target.
+NightlyStart: tests/CMakeFiles/NightlyStart.dir/rule
+.PHONY : NightlyStart
+
+# fast build rule for target.
+NightlyStart/fast:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/NightlyStart.dir/build.make tests/CMakeFiles/NightlyStart.dir/build
+.PHONY : NightlyStart/fast
+
+# Convenience name for target.
+tests/CMakeFiles/NightlyUpdate.dir/rule:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/NightlyUpdate.dir/rule
+.PHONY : tests/CMakeFiles/NightlyUpdate.dir/rule
+
+# Convenience name for target.
+NightlyUpdate: tests/CMakeFiles/NightlyUpdate.dir/rule
+.PHONY : NightlyUpdate
+
+# fast build rule for target.
+NightlyUpdate/fast:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/NightlyUpdate.dir/build.make tests/CMakeFiles/NightlyUpdate.dir/build
+.PHONY : NightlyUpdate/fast
+
+# Convenience name for target.
+tests/CMakeFiles/NightlyConfigure.dir/rule:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/NightlyConfigure.dir/rule
+.PHONY : tests/CMakeFiles/NightlyConfigure.dir/rule
+
+# Convenience name for target.
+NightlyConfigure: tests/CMakeFiles/NightlyConfigure.dir/rule
+.PHONY : NightlyConfigure
+
+# fast build rule for target.
+NightlyConfigure/fast:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/NightlyConfigure.dir/build.make tests/CMakeFiles/NightlyConfigure.dir/build
+.PHONY : NightlyConfigure/fast
+
+# Convenience name for target.
+tests/CMakeFiles/NightlyBuild.dir/rule:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/NightlyBuild.dir/rule
+.PHONY : tests/CMakeFiles/NightlyBuild.dir/rule
+
+# Convenience name for target.
+NightlyBuild: tests/CMakeFiles/NightlyBuild.dir/rule
+.PHONY : NightlyBuild
+
+# fast build rule for target.
+NightlyBuild/fast:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/NightlyBuild.dir/build.make tests/CMakeFiles/NightlyBuild.dir/build
+.PHONY : NightlyBuild/fast
+
+# Convenience name for target.
+tests/CMakeFiles/NightlyTest.dir/rule:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/NightlyTest.dir/rule
+.PHONY : tests/CMakeFiles/NightlyTest.dir/rule
+
+# Convenience name for target.
+NightlyTest: tests/CMakeFiles/NightlyTest.dir/rule
+.PHONY : NightlyTest
+
+# fast build rule for target.
+NightlyTest/fast:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/NightlyTest.dir/build.make tests/CMakeFiles/NightlyTest.dir/build
+.PHONY : NightlyTest/fast
+
+# Convenience name for target.
+tests/CMakeFiles/NightlyCoverage.dir/rule:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/NightlyCoverage.dir/rule
+.PHONY : tests/CMakeFiles/NightlyCoverage.dir/rule
+
+# Convenience name for target.
+NightlyCoverage: tests/CMakeFiles/NightlyCoverage.dir/rule
+.PHONY : NightlyCoverage
+
+# fast build rule for target.
+NightlyCoverage/fast:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/NightlyCoverage.dir/build.make tests/CMakeFiles/NightlyCoverage.dir/build
+.PHONY : NightlyCoverage/fast
+
+# Convenience name for target.
+tests/CMakeFiles/NightlyMemCheck.dir/rule:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/NightlyMemCheck.dir/rule
+.PHONY : tests/CMakeFiles/NightlyMemCheck.dir/rule
+
+# Convenience name for target.
+NightlyMemCheck: tests/CMakeFiles/NightlyMemCheck.dir/rule
+.PHONY : NightlyMemCheck
+
+# fast build rule for target.
+NightlyMemCheck/fast:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/NightlyMemCheck.dir/build.make tests/CMakeFiles/NightlyMemCheck.dir/build
+.PHONY : NightlyMemCheck/fast
+
+# Convenience name for target.
+tests/CMakeFiles/NightlySubmit.dir/rule:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/NightlySubmit.dir/rule
+.PHONY : tests/CMakeFiles/NightlySubmit.dir/rule
+
+# Convenience name for target.
+NightlySubmit: tests/CMakeFiles/NightlySubmit.dir/rule
+.PHONY : NightlySubmit
+
+# fast build rule for target.
+NightlySubmit/fast:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/NightlySubmit.dir/build.make tests/CMakeFiles/NightlySubmit.dir/build
+.PHONY : NightlySubmit/fast
+
+# Convenience name for target.
+tests/CMakeFiles/ExperimentalStart.dir/rule:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ExperimentalStart.dir/rule
+.PHONY : tests/CMakeFiles/ExperimentalStart.dir/rule
+
+# Convenience name for target.
+ExperimentalStart: tests/CMakeFiles/ExperimentalStart.dir/rule
+.PHONY : ExperimentalStart
+
+# fast build rule for target.
+ExperimentalStart/fast:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ExperimentalStart.dir/build.make tests/CMakeFiles/ExperimentalStart.dir/build
+.PHONY : ExperimentalStart/fast
+
+# Convenience name for target.
+tests/CMakeFiles/ExperimentalUpdate.dir/rule:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ExperimentalUpdate.dir/rule
+.PHONY : tests/CMakeFiles/ExperimentalUpdate.dir/rule
+
+# Convenience name for target.
+ExperimentalUpdate: tests/CMakeFiles/ExperimentalUpdate.dir/rule
+.PHONY : ExperimentalUpdate
+
+# fast build rule for target.
+ExperimentalUpdate/fast:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ExperimentalUpdate.dir/build.make tests/CMakeFiles/ExperimentalUpdate.dir/build
+.PHONY : ExperimentalUpdate/fast
+
+# Convenience name for target.
+tests/CMakeFiles/ExperimentalConfigure.dir/rule:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ExperimentalConfigure.dir/rule
+.PHONY : tests/CMakeFiles/ExperimentalConfigure.dir/rule
+
+# Convenience name for target.
+ExperimentalConfigure: tests/CMakeFiles/ExperimentalConfigure.dir/rule
+.PHONY : ExperimentalConfigure
+
+# fast build rule for target.
+ExperimentalConfigure/fast:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ExperimentalConfigure.dir/build.make tests/CMakeFiles/ExperimentalConfigure.dir/build
+.PHONY : ExperimentalConfigure/fast
+
+# Convenience name for target.
+tests/CMakeFiles/ExperimentalBuild.dir/rule:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ExperimentalBuild.dir/rule
+.PHONY : tests/CMakeFiles/ExperimentalBuild.dir/rule
+
+# Convenience name for target.
+ExperimentalBuild: tests/CMakeFiles/ExperimentalBuild.dir/rule
+.PHONY : ExperimentalBuild
+
+# fast build rule for target.
+ExperimentalBuild/fast:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ExperimentalBuild.dir/build.make tests/CMakeFiles/ExperimentalBuild.dir/build
+.PHONY : ExperimentalBuild/fast
+
+# Convenience name for target.
+tests/CMakeFiles/ExperimentalTest.dir/rule:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ExperimentalTest.dir/rule
+.PHONY : tests/CMakeFiles/ExperimentalTest.dir/rule
+
+# Convenience name for target.
+ExperimentalTest: tests/CMakeFiles/ExperimentalTest.dir/rule
+.PHONY : ExperimentalTest
+
+# fast build rule for target.
+ExperimentalTest/fast:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ExperimentalTest.dir/build.make tests/CMakeFiles/ExperimentalTest.dir/build
+.PHONY : ExperimentalTest/fast
+
+# Convenience name for target.
+tests/CMakeFiles/ExperimentalCoverage.dir/rule:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ExperimentalCoverage.dir/rule
+.PHONY : tests/CMakeFiles/ExperimentalCoverage.dir/rule
+
+# Convenience name for target.
+ExperimentalCoverage: tests/CMakeFiles/ExperimentalCoverage.dir/rule
+.PHONY : ExperimentalCoverage
+
+# fast build rule for target.
+ExperimentalCoverage/fast:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ExperimentalCoverage.dir/build.make tests/CMakeFiles/ExperimentalCoverage.dir/build
+.PHONY : ExperimentalCoverage/fast
+
+# Convenience name for target.
+tests/CMakeFiles/ExperimentalMemCheck.dir/rule:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ExperimentalMemCheck.dir/rule
+.PHONY : tests/CMakeFiles/ExperimentalMemCheck.dir/rule
+
+# Convenience name for target.
+ExperimentalMemCheck: tests/CMakeFiles/ExperimentalMemCheck.dir/rule
+.PHONY : ExperimentalMemCheck
+
+# fast build rule for target.
+ExperimentalMemCheck/fast:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ExperimentalMemCheck.dir/build.make tests/CMakeFiles/ExperimentalMemCheck.dir/build
+.PHONY : ExperimentalMemCheck/fast
+
+# Convenience name for target.
+tests/CMakeFiles/ExperimentalSubmit.dir/rule:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ExperimentalSubmit.dir/rule
+.PHONY : tests/CMakeFiles/ExperimentalSubmit.dir/rule
+
+# Convenience name for target.
+ExperimentalSubmit: tests/CMakeFiles/ExperimentalSubmit.dir/rule
+.PHONY : ExperimentalSubmit
+
+# fast build rule for target.
+ExperimentalSubmit/fast:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ExperimentalSubmit.dir/build.make tests/CMakeFiles/ExperimentalSubmit.dir/build
+.PHONY : ExperimentalSubmit/fast
+
+# Convenience name for target.
+tests/CMakeFiles/ContinuousStart.dir/rule:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ContinuousStart.dir/rule
+.PHONY : tests/CMakeFiles/ContinuousStart.dir/rule
+
+# Convenience name for target.
+ContinuousStart: tests/CMakeFiles/ContinuousStart.dir/rule
+.PHONY : ContinuousStart
+
+# fast build rule for target.
+ContinuousStart/fast:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ContinuousStart.dir/build.make tests/CMakeFiles/ContinuousStart.dir/build
+.PHONY : ContinuousStart/fast
+
+# Convenience name for target.
+tests/CMakeFiles/ContinuousUpdate.dir/rule:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ContinuousUpdate.dir/rule
+.PHONY : tests/CMakeFiles/ContinuousUpdate.dir/rule
+
+# Convenience name for target.
+ContinuousUpdate: tests/CMakeFiles/ContinuousUpdate.dir/rule
+.PHONY : ContinuousUpdate
+
+# fast build rule for target.
+ContinuousUpdate/fast:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ContinuousUpdate.dir/build.make tests/CMakeFiles/ContinuousUpdate.dir/build
+.PHONY : ContinuousUpdate/fast
+
+# Convenience name for target.
+tests/CMakeFiles/ContinuousConfigure.dir/rule:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ContinuousConfigure.dir/rule
+.PHONY : tests/CMakeFiles/ContinuousConfigure.dir/rule
+
+# Convenience name for target.
+ContinuousConfigure: tests/CMakeFiles/ContinuousConfigure.dir/rule
+.PHONY : ContinuousConfigure
+
+# fast build rule for target.
+ContinuousConfigure/fast:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ContinuousConfigure.dir/build.make tests/CMakeFiles/ContinuousConfigure.dir/build
+.PHONY : ContinuousConfigure/fast
+
+# Convenience name for target.
+tests/CMakeFiles/ContinuousBuild.dir/rule:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ContinuousBuild.dir/rule
+.PHONY : tests/CMakeFiles/ContinuousBuild.dir/rule
+
+# Convenience name for target.
+ContinuousBuild: tests/CMakeFiles/ContinuousBuild.dir/rule
+.PHONY : ContinuousBuild
+
+# fast build rule for target.
+ContinuousBuild/fast:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ContinuousBuild.dir/build.make tests/CMakeFiles/ContinuousBuild.dir/build
+.PHONY : ContinuousBuild/fast
+
+# Convenience name for target.
+tests/CMakeFiles/ContinuousTest.dir/rule:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ContinuousTest.dir/rule
+.PHONY : tests/CMakeFiles/ContinuousTest.dir/rule
+
+# Convenience name for target.
+ContinuousTest: tests/CMakeFiles/ContinuousTest.dir/rule
+.PHONY : ContinuousTest
+
+# fast build rule for target.
+ContinuousTest/fast:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ContinuousTest.dir/build.make tests/CMakeFiles/ContinuousTest.dir/build
+.PHONY : ContinuousTest/fast
+
+# Convenience name for target.
+tests/CMakeFiles/ContinuousCoverage.dir/rule:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ContinuousCoverage.dir/rule
+.PHONY : tests/CMakeFiles/ContinuousCoverage.dir/rule
+
+# Convenience name for target.
+ContinuousCoverage: tests/CMakeFiles/ContinuousCoverage.dir/rule
+.PHONY : ContinuousCoverage
+
+# fast build rule for target.
+ContinuousCoverage/fast:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ContinuousCoverage.dir/build.make tests/CMakeFiles/ContinuousCoverage.dir/build
+.PHONY : ContinuousCoverage/fast
+
+# Convenience name for target.
+tests/CMakeFiles/ContinuousMemCheck.dir/rule:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ContinuousMemCheck.dir/rule
+.PHONY : tests/CMakeFiles/ContinuousMemCheck.dir/rule
+
+# Convenience name for target.
+ContinuousMemCheck: tests/CMakeFiles/ContinuousMemCheck.dir/rule
+.PHONY : ContinuousMemCheck
+
+# fast build rule for target.
+ContinuousMemCheck/fast:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ContinuousMemCheck.dir/build.make tests/CMakeFiles/ContinuousMemCheck.dir/build
+.PHONY : ContinuousMemCheck/fast
+
+# Convenience name for target.
+tests/CMakeFiles/ContinuousSubmit.dir/rule:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/ContinuousSubmit.dir/rule
+.PHONY : tests/CMakeFiles/ContinuousSubmit.dir/rule
+
+# Convenience name for target.
+ContinuousSubmit: tests/CMakeFiles/ContinuousSubmit.dir/rule
+.PHONY : ContinuousSubmit
+
+# fast build rule for target.
+ContinuousSubmit/fast:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ContinuousSubmit.dir/build.make tests/CMakeFiles/ContinuousSubmit.dir/build
+.PHONY : ContinuousSubmit/fast
+
+test_hud.o: test_hud.cpp.o
+.PHONY : test_hud.o
 
 # target to build an object file
-ipc_reader.cpp.o:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ipc_reader.dir/build.make tests/CMakeFiles/ipc_reader.dir/ipc_reader.cpp.o
-.PHONY : ipc_reader.cpp.o
+test_hud.cpp.o:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/phud_tests.dir/build.make tests/CMakeFiles/phud_tests.dir/test_hud.cpp.o
+.PHONY : test_hud.cpp.o
 
-ipc_reader.i: ipc_reader.cpp.i
-.PHONY : ipc_reader.i
+test_hud.i: test_hud.cpp.i
+.PHONY : test_hud.i
 
 # target to preprocess a source file
-ipc_reader.cpp.i:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ipc_reader.dir/build.make tests/CMakeFiles/ipc_reader.dir/ipc_reader.cpp.i
-.PHONY : ipc_reader.cpp.i
+test_hud.cpp.i:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/phud_tests.dir/build.make tests/CMakeFiles/phud_tests.dir/test_hud.cpp.i
+.PHONY : test_hud.cpp.i
 
-ipc_reader.s: ipc_reader.cpp.s
-.PHONY : ipc_reader.s
+test_hud.s: test_hud.cpp.s
+.PHONY : test_hud.s
 
 # target to generate assembly for a file
-ipc_reader.cpp.s:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ipc_reader.dir/build.make tests/CMakeFiles/ipc_reader.dir/ipc_reader.cpp.s
-.PHONY : ipc_reader.cpp.s
+test_hud.cpp.s:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/phud_tests.dir/build.make tests/CMakeFiles/phud_tests.dir/test_hud.cpp.s
+.PHONY : test_hud.cpp.s
 
-ipc_writer.o: ipc_writer.cpp.o
-.PHONY : ipc_writer.o
+test_main.o: test_main.cpp.o
+.PHONY : test_main.o
 
 # target to build an object file
-ipc_writer.cpp.o:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ipc_writer.dir/build.make tests/CMakeFiles/ipc_writer.dir/ipc_writer.cpp.o
-.PHONY : ipc_writer.cpp.o
+test_main.cpp.o:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/phud_tests.dir/build.make tests/CMakeFiles/phud_tests.dir/test_main.cpp.o
+.PHONY : test_main.cpp.o
 
-ipc_writer.i: ipc_writer.cpp.i
-.PHONY : ipc_writer.i
+test_main.i: test_main.cpp.i
+.PHONY : test_main.i
 
 # target to preprocess a source file
-ipc_writer.cpp.i:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ipc_writer.dir/build.make tests/CMakeFiles/ipc_writer.dir/ipc_writer.cpp.i
-.PHONY : ipc_writer.cpp.i
+test_main.cpp.i:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/phud_tests.dir/build.make tests/CMakeFiles/phud_tests.dir/test_main.cpp.i
+.PHONY : test_main.cpp.i
 
-ipc_writer.s: ipc_writer.cpp.s
-.PHONY : ipc_writer.s
+test_main.s: test_main.cpp.s
+.PHONY : test_main.s
 
 # target to generate assembly for a file
-ipc_writer.cpp.s:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ipc_writer.dir/build.make tests/CMakeFiles/ipc_writer.dir/ipc_writer.cpp.s
-.PHONY : ipc_writer.cpp.s
+test_main.cpp.s:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/phud_tests.dir/build.make tests/CMakeFiles/phud_tests.dir/test_main.cpp.s
+.PHONY : test_main.cpp.s
 
-test_SharedMemoryIPC.o: test_SharedMemoryIPC.cpp.o
-.PHONY : test_SharedMemoryIPC.o
+test_net.o: test_net.cpp.o
+.PHONY : test_net.o
 
 # target to build an object file
-test_SharedMemoryIPC.cpp.o:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_SharedMemoryIPC.dir/build.make tests/CMakeFiles/test_SharedMemoryIPC.dir/test_SharedMemoryIPC.cpp.o
-.PHONY : test_SharedMemoryIPC.cpp.o
+test_net.cpp.o:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/phud_tests.dir/build.make tests/CMakeFiles/phud_tests.dir/test_net.cpp.o
+.PHONY : test_net.cpp.o
 
-test_SharedMemoryIPC.i: test_SharedMemoryIPC.cpp.i
-.PHONY : test_SharedMemoryIPC.i
-
-# target to preprocess a source file
-test_SharedMemoryIPC.cpp.i:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_SharedMemoryIPC.dir/build.make tests/CMakeFiles/test_SharedMemoryIPC.dir/test_SharedMemoryIPC.cpp.i
-.PHONY : test_SharedMemoryIPC.cpp.i
-
-test_SharedMemoryIPC.s: test_SharedMemoryIPC.cpp.s
-.PHONY : test_SharedMemoryIPC.s
-
-# target to generate assembly for a file
-test_SharedMemoryIPC.cpp.s:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_SharedMemoryIPC.dir/build.make tests/CMakeFiles/test_SharedMemoryIPC.dir/test_SharedMemoryIPC.cpp.s
-.PHONY : test_SharedMemoryIPC.cpp.s
-
-test_ipc.o: test_ipc.cpp.o
-.PHONY : test_ipc.o
-
-# target to build an object file
-test_ipc.cpp.o:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ipc.dir/build.make tests/CMakeFiles/test_ipc.dir/test_ipc.cpp.o
-.PHONY : test_ipc.cpp.o
-
-test_ipc.i: test_ipc.cpp.i
-.PHONY : test_ipc.i
+test_net.i: test_net.cpp.i
+.PHONY : test_net.i
 
 # target to preprocess a source file
-test_ipc.cpp.i:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ipc.dir/build.make tests/CMakeFiles/test_ipc.dir/test_ipc.cpp.i
-.PHONY : test_ipc.cpp.i
+test_net.cpp.i:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/phud_tests.dir/build.make tests/CMakeFiles/phud_tests.dir/test_net.cpp.i
+.PHONY : test_net.cpp.i
 
-test_ipc.s: test_ipc.cpp.s
-.PHONY : test_ipc.s
+test_net.s: test_net.cpp.s
+.PHONY : test_net.s
 
 # target to generate assembly for a file
-test_ipc.cpp.s:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_ipc.dir/build.make tests/CMakeFiles/test_ipc.dir/test_ipc.cpp.s
-.PHONY : test_ipc.cpp.s
+test_net.cpp.s:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/phud_tests.dir/build.make tests/CMakeFiles/phud_tests.dir/test_net.cpp.s
+.PHONY : test_net.cpp.s
 
 # Help Target
 help:
@@ -287,22 +613,44 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... ipc_reader"
-	@echo "... ipc_writer"
-	@echo "... test_SharedMemoryIPC"
-	@echo "... test_ipc"
-	@echo "... ipc_reader.o"
-	@echo "... ipc_reader.i"
-	@echo "... ipc_reader.s"
-	@echo "... ipc_writer.o"
-	@echo "... ipc_writer.i"
-	@echo "... ipc_writer.s"
-	@echo "... test_SharedMemoryIPC.o"
-	@echo "... test_SharedMemoryIPC.i"
-	@echo "... test_SharedMemoryIPC.s"
-	@echo "... test_ipc.o"
-	@echo "... test_ipc.i"
-	@echo "... test_ipc.s"
+	@echo "... Continuous"
+	@echo "... ContinuousBuild"
+	@echo "... ContinuousConfigure"
+	@echo "... ContinuousCoverage"
+	@echo "... ContinuousMemCheck"
+	@echo "... ContinuousStart"
+	@echo "... ContinuousSubmit"
+	@echo "... ContinuousTest"
+	@echo "... ContinuousUpdate"
+	@echo "... Experimental"
+	@echo "... ExperimentalBuild"
+	@echo "... ExperimentalConfigure"
+	@echo "... ExperimentalCoverage"
+	@echo "... ExperimentalMemCheck"
+	@echo "... ExperimentalStart"
+	@echo "... ExperimentalSubmit"
+	@echo "... ExperimentalTest"
+	@echo "... ExperimentalUpdate"
+	@echo "... Nightly"
+	@echo "... NightlyBuild"
+	@echo "... NightlyConfigure"
+	@echo "... NightlyCoverage"
+	@echo "... NightlyMemCheck"
+	@echo "... NightlyMemoryCheck"
+	@echo "... NightlyStart"
+	@echo "... NightlySubmit"
+	@echo "... NightlyTest"
+	@echo "... NightlyUpdate"
+	@echo "... phud_tests"
+	@echo "... test_hud.o"
+	@echo "... test_hud.i"
+	@echo "... test_hud.s"
+	@echo "... test_main.o"
+	@echo "... test_main.i"
+	@echo "... test_main.s"
+	@echo "... test_net.o"
+	@echo "... test_net.i"
+	@echo "... test_net.s"
 .PHONY : help
 
 

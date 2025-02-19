@@ -183,4 +183,6 @@ _deps/catch2-build/src/CMakeFiles/Catch2.dir/catch2/generators/catch_generators.
  /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/internal/catch_enforce.hpp \
  /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/generators/catch_generator_exception.hpp \
  /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/interfaces/catch_interfaces_capture.hpp \
- /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/internal/catch_result_type.hpp
+ /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/internal/catch_result_type.hpp \
+ /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/benchmark/detail/catch_benchmark_stats_fwd.hpp \
+ /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/benchmark/catch_clock.hpp

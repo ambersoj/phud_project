@@ -1,6 +1,6 @@
 #define CATCH_CONFIG_MAIN
 #include <catch2/catch.hpp>
-#include "IPCManager.h"
+#include "IPCManager.hpp"
 
 TEST_CASE("IPCManager selects IPC type", "[IPC]") {
     IPCManager ipc;
