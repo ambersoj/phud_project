@@ -1,7 +1,16 @@
-#define CATCH_CONFIG_MAIN
 #include <catch2/catch_all.hpp>
 #include "../include/IPCManager.hpp"
 
-TEST_CASE("IPCManager Placeholder Test", "[ipc]") {
-    REQUIRE(1 == 1);
+TEST_CASE("IPC Initialization", "[ipc]") {
+    IPCManager ipc;
+    REQUIRE_NOTHROW(ipc.initialize());
+}
+
+TEST_CASE("IPC Data Transfer", "[ipc]") {
+    IPCManager ipc;
+    ipc.initialize();
+
+    std::string testData = "Hello, IPC!";
+    ipc.writeData(testData);
+    REQUIRE(ipc.readData() == testData);
 }
