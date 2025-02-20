@@ -546,6 +546,20 @@ ContinuousSubmit/fast:
 	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ContinuousSubmit.dir/build.make tests/CMakeFiles/ContinuousSubmit.dir/build
 .PHONY : ContinuousSubmit/fast
 
+# Convenience name for target.
+tests/CMakeFiles/test_integration.dir/rule:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_integration.dir/rule
+.PHONY : tests/CMakeFiles/test_integration.dir/rule
+
+# Convenience name for target.
+test_integration: tests/CMakeFiles/test_integration.dir/rule
+.PHONY : test_integration
+
+# fast build rule for target.
+test_integration/fast:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_integration.dir/build.make tests/CMakeFiles/test_integration.dir/build
+.PHONY : test_integration/fast
+
 test_cli.o: test_cli.cpp.o
 .PHONY : test_cli.o
 
@@ -594,6 +608,30 @@ test_comms.cpp.s:
 	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_comms.dir/build.make tests/CMakeFiles/test_comms.dir/test_comms.cpp.s
 .PHONY : test_comms.cpp.s
 
+test_integration.o: test_integration.cpp.o
+.PHONY : test_integration.o
+
+# target to build an object file
+test_integration.cpp.o:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_integration.dir/build.make tests/CMakeFiles/test_integration.dir/test_integration.cpp.o
+.PHONY : test_integration.cpp.o
+
+test_integration.i: test_integration.cpp.i
+.PHONY : test_integration.i
+
+# target to preprocess a source file
+test_integration.cpp.i:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_integration.dir/build.make tests/CMakeFiles/test_integration.dir/test_integration.cpp.i
+.PHONY : test_integration.cpp.i
+
+test_integration.s: test_integration.cpp.s
+.PHONY : test_integration.s
+
+# target to generate assembly for a file
+test_integration.cpp.s:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_integration.dir/build.make tests/CMakeFiles/test_integration.dir/test_integration.cpp.s
+.PHONY : test_integration.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -633,12 +671,16 @@ help:
 	@echo "... NightlyUpdate"
 	@echo "... test_cli"
 	@echo "... test_comms"
+	@echo "... test_integration"
 	@echo "... test_cli.o"
 	@echo "... test_cli.i"
 	@echo "... test_cli.s"
 	@echo "... test_comms.o"
 	@echo "... test_comms.i"
 	@echo "... test_comms.s"
+	@echo "... test_integration.o"
+	@echo "... test_integration.i"
+	@echo "... test_integration.s"
 .PHONY : help
 
 

@@ -206,4 +206,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "tests/CMakeFiles/ContinuousCoverage.dir/DependInfo.cmake"
   "tests/CMakeFiles/ContinuousMemCheck.dir/DependInfo.cmake"
   "tests/CMakeFiles/ContinuousSubmit.dir/DependInfo.cmake"
+  "tests/CMakeFiles/test_integration.dir/DependInfo.cmake"
   )

@@ -60,6 +60,7 @@
 /usr/local/phud_project/build/tests/CMakeFiles/ContinuousCoverage.dir
 /usr/local/phud_project/build/tests/CMakeFiles/ContinuousMemCheck.dir
 /usr/local/phud_project/build/tests/CMakeFiles/ContinuousSubmit.dir
+/usr/local/phud_project/build/tests/CMakeFiles/test_integration.dir
 /usr/local/phud_project/build/tests/CMakeFiles/test.dir
 /usr/local/phud_project/build/tests/CMakeFiles/edit_cache.dir
 /usr/local/phud_project/build/tests/CMakeFiles/rebuild_cache.dir

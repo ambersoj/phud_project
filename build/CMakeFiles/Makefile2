@@ -207,6 +207,7 @@ net/clean: net/CMakeFiles/net.dir/clean
 # Recursive "all" directory target.
 tests/all: tests/CMakeFiles/test_comms.dir/all
 tests/all: tests/CMakeFiles/test_cli.dir/all
+tests/all: tests/CMakeFiles/test_integration.dir/all
 .PHONY : tests/all
 
 # Recursive "preinstall" directory target.
@@ -244,6 +245,7 @@ tests/clean: tests/CMakeFiles/ContinuousTest.dir/clean
 tests/clean: tests/CMakeFiles/ContinuousCoverage.dir/clean
 tests/clean: tests/CMakeFiles/ContinuousMemCheck.dir/clean
 tests/clean: tests/CMakeFiles/ContinuousSubmit.dir/clean
+tests/clean: tests/CMakeFiles/test_integration.dir/clean
 .PHONY : tests/clean
 
 #=============================================================================
@@ -253,12 +255,12 @@ tests/clean: tests/CMakeFiles/ContinuousSubmit.dir/clean
 _deps/catch2-build/src/CMakeFiles/Catch2.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/usr/local/phud_project/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84 "Built target Catch2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/usr/local/phud_project/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82 "Built target Catch2"
 .PHONY : _deps/catch2-build/src/CMakeFiles/Catch2.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/catch2-build/src/CMakeFiles/Catch2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/phud_project/build/CMakeFiles 84
+	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/phud_project/build/CMakeFiles 82
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/catch2-build/src/CMakeFiles/Catch2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/phud_project/build/CMakeFiles 0
 .PHONY : _deps/catch2-build/src/CMakeFiles/Catch2.dir/rule
@@ -279,12 +281,12 @@ _deps/catch2-build/src/CMakeFiles/Catch2.dir/clean:
 _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/all: _deps/catch2-build/src/CMakeFiles/Catch2.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/usr/local/phud_project/build/CMakeFiles --progress-num=85 "Built target Catch2WithMain"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/usr/local/phud_project/build/CMakeFiles --progress-num=83,84 "Built target Catch2WithMain"
 .PHONY : _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/phud_project/build/CMakeFiles 85
+	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/phud_project/build/CMakeFiles 84
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/phud_project/build/CMakeFiles 0
 .PHONY : _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/rule
@@ -305,7 +307,7 @@ _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/clean:
 ipc/CMakeFiles/ipc.dir/all:
 	$(MAKE) $(MAKESILENT) -f ipc/CMakeFiles/ipc.dir/build.make ipc/CMakeFiles/ipc.dir/depend
 	$(MAKE) $(MAKESILENT) -f ipc/CMakeFiles/ipc.dir/build.make ipc/CMakeFiles/ipc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/usr/local/phud_project/build/CMakeFiles --progress-num=91,92,93 "Built target ipc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/usr/local/phud_project/build/CMakeFiles --progress-num=90,91,92 "Built target ipc"
 .PHONY : ipc/CMakeFiles/ipc.dir/all
 
 # Build rule for subdir invocation for target.
@@ -331,7 +333,7 @@ ipc/CMakeFiles/ipc.dir/clean:
 hud/CMakeFiles/hud.dir/all: ipc/CMakeFiles/ipc.dir/all
 	$(MAKE) $(MAKESILENT) -f hud/CMakeFiles/hud.dir/build.make hud/CMakeFiles/hud.dir/depend
 	$(MAKE) $(MAKESILENT) -f hud/CMakeFiles/hud.dir/build.make hud/CMakeFiles/hud.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/usr/local/phud_project/build/CMakeFiles --progress-num=89,90 "Built target hud"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/usr/local/phud_project/build/CMakeFiles --progress-num=88,89 "Built target hud"
 .PHONY : hud/CMakeFiles/hud.dir/all
 
 # Build rule for subdir invocation for target.
@@ -357,12 +359,12 @@ hud/CMakeFiles/hud.dir/clean:
 net/CMakeFiles/net.dir/all: ipc/CMakeFiles/ipc.dir/all
 	$(MAKE) $(MAKESILENT) -f net/CMakeFiles/net.dir/build.make net/CMakeFiles/net.dir/depend
 	$(MAKE) $(MAKESILENT) -f net/CMakeFiles/net.dir/build.make net/CMakeFiles/net.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/usr/local/phud_project/build/CMakeFiles --progress-num=94,95 "Built target net"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/usr/local/phud_project/build/CMakeFiles --progress-num=93 "Built target net"
 .PHONY : net/CMakeFiles/net.dir/all
 
 # Build rule for subdir invocation for target.
 net/CMakeFiles/net.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/phud_project/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/phud_project/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 net/CMakeFiles/net.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/phud_project/build/CMakeFiles 0
 .PHONY : net/CMakeFiles/net.dir/rule
@@ -383,12 +385,12 @@ net/CMakeFiles/net.dir/clean:
 comms/CMakeFiles/comms.dir/all:
 	$(MAKE) $(MAKESILENT) -f comms/CMakeFiles/comms.dir/build.make comms/CMakeFiles/comms.dir/depend
 	$(MAKE) $(MAKESILENT) -f comms/CMakeFiles/comms.dir/build.make comms/CMakeFiles/comms.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/usr/local/phud_project/build/CMakeFiles --progress-num=88 "Built target comms"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/usr/local/phud_project/build/CMakeFiles --progress-num=86,87 "Built target comms"
 .PHONY : comms/CMakeFiles/comms.dir/all
 
 # Build rule for subdir invocation for target.
 comms/CMakeFiles/comms.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/phud_project/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/phud_project/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 comms/CMakeFiles/comms.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/phud_project/build/CMakeFiles 0
 .PHONY : comms/CMakeFiles/comms.dir/rule
@@ -409,7 +411,7 @@ comms/CMakeFiles/comms.dir/clean:
 cli/CMakeFiles/cli_lib.dir/all: comms/CMakeFiles/comms.dir/all
 	$(MAKE) $(MAKESILENT) -f cli/CMakeFiles/cli_lib.dir/build.make cli/CMakeFiles/cli_lib.dir/depend
 	$(MAKE) $(MAKESILENT) -f cli/CMakeFiles/cli_lib.dir/build.make cli/CMakeFiles/cli_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/usr/local/phud_project/build/CMakeFiles --progress-num=86,87 "Built target cli_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/usr/local/phud_project/build/CMakeFiles --progress-num=85 "Built target cli_lib"
 .PHONY : cli/CMakeFiles/cli_lib.dir/all
 
 # Build rule for subdir invocation for target.
@@ -436,12 +438,12 @@ cli/CMakeFiles/phud_cli.dir/all: comms/CMakeFiles/comms.dir/all
 cli/CMakeFiles/phud_cli.dir/all: cli/CMakeFiles/cli_lib.dir/all
 	$(MAKE) $(MAKESILENT) -f cli/CMakeFiles/phud_cli.dir/build.make cli/CMakeFiles/phud_cli.dir/depend
 	$(MAKE) $(MAKESILENT) -f cli/CMakeFiles/phud_cli.dir/build.make cli/CMakeFiles/phud_cli.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/usr/local/phud_project/build/CMakeFiles --progress-num=96 "Built target phud_cli"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/usr/local/phud_project/build/CMakeFiles --progress-num=94,95 "Built target phud_cli"
 .PHONY : cli/CMakeFiles/phud_cli.dir/all
 
 # Build rule for subdir invocation for target.
 cli/CMakeFiles/phud_cli.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/phud_project/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/phud_project/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cli/CMakeFiles/phud_cli.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/phud_project/build/CMakeFiles 0
 .PHONY : cli/CMakeFiles/phud_cli.dir/rule
@@ -464,7 +466,7 @@ tests/CMakeFiles/test_comms.dir/all: _deps/catch2-build/src/CMakeFiles/Catch2Wit
 tests/CMakeFiles/test_comms.dir/all: comms/CMakeFiles/comms.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_comms.dir/build.make tests/CMakeFiles/test_comms.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_comms.dir/build.make tests/CMakeFiles/test_comms.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/usr/local/phud_project/build/CMakeFiles --progress-num=99,100 "Built target test_comms"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/usr/local/phud_project/build/CMakeFiles --progress-num=97,98 "Built target test_comms"
 .PHONY : tests/CMakeFiles/test_comms.dir/all
 
 # Build rule for subdir invocation for target.
@@ -493,12 +495,12 @@ tests/CMakeFiles/test_cli.dir/all: comms/CMakeFiles/comms.dir/all
 tests/CMakeFiles/test_cli.dir/all: cli/CMakeFiles/cli_lib.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_cli.dir/build.make tests/CMakeFiles/test_cli.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_cli.dir/build.make tests/CMakeFiles/test_cli.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/usr/local/phud_project/build/CMakeFiles --progress-num=97,98 "Built target test_cli"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/usr/local/phud_project/build/CMakeFiles --progress-num=96 "Built target test_cli"
 .PHONY : tests/CMakeFiles/test_cli.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/test_cli.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/phud_project/build/CMakeFiles 90
+	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/phud_project/build/CMakeFiles 88
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_cli.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/phud_project/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/test_cli.dir/rule
@@ -1239,6 +1241,35 @@ ContinuousSubmit: tests/CMakeFiles/ContinuousSubmit.dir/rule
 tests/CMakeFiles/ContinuousSubmit.dir/clean:
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ContinuousSubmit.dir/build.make tests/CMakeFiles/ContinuousSubmit.dir/clean
 .PHONY : tests/CMakeFiles/ContinuousSubmit.dir/clean
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/test_integration.dir
+
+# All Build rule for target.
+tests/CMakeFiles/test_integration.dir/all: _deps/catch2-build/src/CMakeFiles/Catch2.dir/all
+tests/CMakeFiles/test_integration.dir/all: _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/all
+tests/CMakeFiles/test_integration.dir/all: comms/CMakeFiles/comms.dir/all
+tests/CMakeFiles/test_integration.dir/all: cli/CMakeFiles/cli_lib.dir/all
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_integration.dir/build.make tests/CMakeFiles/test_integration.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_integration.dir/build.make tests/CMakeFiles/test_integration.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/usr/local/phud_project/build/CMakeFiles --progress-num=99,100 "Built target test_integration"
+.PHONY : tests/CMakeFiles/test_integration.dir/all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/test_integration.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/phud_project/build/CMakeFiles 89
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_integration.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/phud_project/build/CMakeFiles 0
+.PHONY : tests/CMakeFiles/test_integration.dir/rule
+
+# Convenience name for target.
+test_integration: tests/CMakeFiles/test_integration.dir/rule
+.PHONY : test_integration
+
+# clean rule for target.
+tests/CMakeFiles/test_integration.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_integration.dir/build.make tests/CMakeFiles/test_integration.dir/clean
+.PHONY : tests/CMakeFiles/test_integration.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
