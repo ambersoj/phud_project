@@ -13,5 +13,5 @@ include(CTest)
 add_test(NAME CommsTests COMMAND test_comms)
 
 add_executable(test_integration test_integration.cpp)
-target_link_libraries(test_integration PRIVATE cli_lib comms Catch2::Catch2WithMain)
+target_link_libraries(test_integration PRIVATE hud cli_lib comms Catch2::Catch2WithMain)
 add_test(NAME IntegrationTests COMMAND test_integration)

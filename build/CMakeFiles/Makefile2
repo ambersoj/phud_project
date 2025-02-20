@@ -1248,6 +1248,8 @@ tests/CMakeFiles/ContinuousSubmit.dir/clean:
 # All Build rule for target.
 tests/CMakeFiles/test_integration.dir/all: _deps/catch2-build/src/CMakeFiles/Catch2.dir/all
 tests/CMakeFiles/test_integration.dir/all: _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/all
+tests/CMakeFiles/test_integration.dir/all: ipc/CMakeFiles/ipc.dir/all
+tests/CMakeFiles/test_integration.dir/all: hud/CMakeFiles/hud.dir/all
 tests/CMakeFiles/test_integration.dir/all: comms/CMakeFiles/comms.dir/all
 tests/CMakeFiles/test_integration.dir/all: cli/CMakeFiles/cli_lib.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_integration.dir/build.make tests/CMakeFiles/test_integration.dir/depend
@@ -1257,7 +1259,7 @@ tests/CMakeFiles/test_integration.dir/all: cli/CMakeFiles/cli_lib.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/test_integration.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/phud_project/build/CMakeFiles 89
+	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/phud_project/build/CMakeFiles 94
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_integration.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /usr/local/phud_project/build/CMakeFiles 0
 .PHONY : tests/CMakeFiles/test_integration.dir/rule

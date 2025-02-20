@@ -414,6 +414,7 @@ tests/CMakeFiles/test_integration.dir/test_integration.cpp.o: \
  /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/reporters/catch_reporter_teamcity.hpp \
  /usr/local/phud_project/build/_deps/catch2-src/src/catch2/../catch2/reporters/catch_reporter_xml.hpp \
  /usr/local/phud_project/include/cli.hpp \
+ /usr/local/phud_project/include/hud.hpp \
  /usr/local/phud_project/include/UnixSocketComms.hpp \
  /usr/include/x86_64-linux-gnu/sys/socket.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
@@ -438,4 +439,7 @@ tests/CMakeFiles/test_integration.dir/test_integration.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h
+ /usr/include/linux/close_range.h \
+ /usr/local/phud_project/include/UnixSocketComms.hpp \
+ /usr/include/c++/13/thread /usr/include/c++/13/bits/std_thread.h \
+ /usr/include/c++/13/bits/this_thread_sleep.h

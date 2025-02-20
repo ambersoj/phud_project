@@ -92,9 +92,11 @@ test_integration_EXTERNAL_OBJECTS =
 
 tests/test_integration: tests/CMakeFiles/test_integration.dir/test_integration.cpp.o
 tests/test_integration: tests/CMakeFiles/test_integration.dir/build.make
+tests/test_integration: hud/libhud.a
 tests/test_integration: cli/libcli_lib.a
 tests/test_integration: comms/libcomms.a
 tests/test_integration: _deps/catch2-build/src/libCatch2Main.a
+tests/test_integration: ipc/libipc.a
 tests/test_integration: _deps/catch2-build/src/libCatch2.a
 tests/test_integration: tests/CMakeFiles/test_integration.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/usr/local/phud_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test_integration"

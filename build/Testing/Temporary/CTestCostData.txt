@@ -1,4 +1,4 @@
-CliTests 1 0.00205351
-CommsTests 1 0.102536
-IntegrationTests 1 0.00245411
+CliTests 3 0.000736111
+CommsTests 3 0.0341695
+IntegrationTests 2 0.00114681
 ---
