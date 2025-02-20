@@ -1,14 +1,14 @@
-Start testing: Feb 19 20:15 CST
+Start testing: Feb 20 10:35 CST
 ----------------------------------------------------------
 1/3 Testing: CliTests
 1/3 Test: CliTests
 Command: "/usr/local/phud_project/build/tests/test_cli"
 Directory: /usr/local/phud_project/build/tests
-"CliTests" start time: Feb 19 20:15 CST
+"CliTests" start time: Feb 20 10:35 CST
 Output:
 ----------------------------------------------------------
 [CLI] Connecting to HUD socket...
-Error connecting to server: No such file or directory
+Error connecting to server: Connection refused
 [UnixSocketComms] Sending message: Hello, PHUD!
 Error sending message: Transport endpoint is not connected
 Error reading message (or connection closed): Invalid argument
@@ -17,7 +17,7 @@ Error reading message (or connection closed): Invalid argument
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"CliTests" end time: Feb 19 20:15 CST
+"CliTests" end time: Feb 20 10:35 CST
 "CliTests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -25,10 +25,10 @@ Test Passed.
 2/3 Test: CommsTests
 Command: "/usr/local/phud_project/build/tests/test_comms"
 Directory: /usr/local/phud_project/build/tests
-"CommsTests" start time: Feb 19 20:15 CST
+"CommsTests" start time: Feb 20 10:35 CST
 Output:
 ----------------------------------------------------------
-Randomness seeded to: 3414848874
+Randomness seeded to: 1456424560
 [UnixSocketComms] Server listening on /tmp/mpp_socket
 [UnixSocketComms] Connected to server.
 [UnixSocketComms] Sending message: Hello, MPP!
@@ -40,7 +40,7 @@ All tests passed (3 assertions in 1 test case)
 Test time =   0.10 sec
 ----------------------------------------------------------
 Test Passed.
-"CommsTests" end time: Feb 19 20:15 CST
+"CommsTests" end time: Feb 20 10:35 CST
 "CommsTests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -48,11 +48,11 @@ Test Passed.
 3/3 Test: IntegrationTests
 Command: "/usr/local/phud_project/build/tests/test_integration"
 Directory: /usr/local/phud_project/build/tests
-"IntegrationTests" start time: Feb 19 20:15 CST
+"IntegrationTests" start time: Feb 20 10:35 CST
 Output:
 ----------------------------------------------------------
 [CLI] Connecting to HUD socket...
-Error connecting to server: No such file or directory
+Error connecting to server: Connection refused
 [UnixSocketComms] Sending message: Hello, PHUD!
 Error sending message: Transport endpoint is not connected
 Error reading message (or connection closed): Invalid argument
@@ -61,8 +61,8 @@ Error reading message (or connection closed): Invalid argument
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"IntegrationTests" end time: Feb 19 20:15 CST
+"IntegrationTests" end time: Feb 20 10:35 CST
 "IntegrationTests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Feb 19 20:15 CST
+End testing: Feb 20 10:35 CST
