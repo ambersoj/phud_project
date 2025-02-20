@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcomms.a CMakeFiles/comms.dir/UnixSocketComms.cpp.o
+/usr/bin/ranlib libcomms.a

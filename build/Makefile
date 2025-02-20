@@ -192,17 +192,69 @@ net/fast:
 .PHONY : net/fast
 
 #=============================================================================
-# Target rules for targets named phud_tests
+# Target rules for targets named comms
 
 # Build rule for target.
-phud_tests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 phud_tests
-.PHONY : phud_tests
+comms: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 comms
+.PHONY : comms
 
 # fast build rule for target.
-phud_tests/fast:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/phud_tests.dir/build.make tests/CMakeFiles/phud_tests.dir/build
-.PHONY : phud_tests/fast
+comms/fast:
+	$(MAKE) $(MAKESILENT) -f comms/CMakeFiles/comms.dir/build.make comms/CMakeFiles/comms.dir/build
+.PHONY : comms/fast
+
+#=============================================================================
+# Target rules for targets named cli_lib
+
+# Build rule for target.
+cli_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cli_lib
+.PHONY : cli_lib
+
+# fast build rule for target.
+cli_lib/fast:
+	$(MAKE) $(MAKESILENT) -f cli/CMakeFiles/cli_lib.dir/build.make cli/CMakeFiles/cli_lib.dir/build
+.PHONY : cli_lib/fast
+
+#=============================================================================
+# Target rules for targets named phud_cli
+
+# Build rule for target.
+phud_cli: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 phud_cli
+.PHONY : phud_cli
+
+# fast build rule for target.
+phud_cli/fast:
+	$(MAKE) $(MAKESILENT) -f cli/CMakeFiles/phud_cli.dir/build.make cli/CMakeFiles/phud_cli.dir/build
+.PHONY : phud_cli/fast
+
+#=============================================================================
+# Target rules for targets named test_comms
+
+# Build rule for target.
+test_comms: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_comms
+.PHONY : test_comms
+
+# fast build rule for target.
+test_comms/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_comms.dir/build.make tests/CMakeFiles/test_comms.dir/build
+.PHONY : test_comms/fast
+
+#=============================================================================
+# Target rules for targets named test_cli
+
+# Build rule for target.
+test_cli: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_cli
+.PHONY : test_cli
+
+# fast build rule for target.
+test_cli/fast:
+	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_cli.dir/build.make tests/CMakeFiles/test_cli.dir/build
+.PHONY : test_cli/fast
 
 #=============================================================================
 # Target rules for targets named Experimental
@@ -607,10 +659,14 @@ help:
 	@echo "... NightlyUpdate"
 	@echo "... Catch2"
 	@echo "... Catch2WithMain"
+	@echo "... cli_lib"
+	@echo "... comms"
 	@echo "... hud"
 	@echo "... ipc"
 	@echo "... net"
-	@echo "... phud_tests"
+	@echo "... phud_cli"
+	@echo "... test_cli"
+	@echo "... test_comms"
 .PHONY : help
 
 

@@ -16,13 +16,13 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(Catch2)
 
-# Add core IPC at root level
-add_subdirectory(ipc)  
-
-# Add other components
-add_subdirectory(hud)  # ✅ Fixed directory structure (no src/)
-add_subdirectory(net)  # ✅ Fixed directory structure (no src/)
-add_subdirectory(tests)  # ✅ Tests directory
+# Add core components
+add_subdirectory(ipc)
+add_subdirectory(hud)
+add_subdirectory(net)
+add_subdirectory(comms)  # ✅ Add comms
+add_subdirectory(cli)    # ✅ Add CLI component
+add_subdirectory(tests)  # ✅ Add tests
 
 # Enable Testing
 enable_testing()

@@ -1,2 +1,3 @@
-PhudTests 1 0.00277118
+CliTests 1 0.00215601
+CommsTests 1 0.102585
 ---

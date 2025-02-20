@@ -1,18 +1,13 @@
 cmake_minimum_required(VERSION 3.10)
-project(phud_tests)
 
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED True)
+add_executable(test_comms test_comms.cpp)
+target_link_libraries(test_comms PRIVATE comms Catch2::Catch2WithMain)
 
-# Add test executable
-add_executable(phud_tests test_main.cpp test_hud.cpp test_net.cpp)
+# Add test executable for CLI
+add_executable(test_cli test_cli.cpp)
+target_link_libraries(test_cli PRIVATE cli_lib comms Catch2::Catch2WithMain)
+add_test(NAME CliTests COMMAND test_cli)
 
-# Link required libraries
-target_link_libraries(phud_tests PRIVATE hud net Catch2::Catch2WithMain)
-
-# Include directories
-target_include_directories(phud_tests PRIVATE ${CMAKE_SOURCE_DIR}/include)
-
-# Enable testing with CTest
+# Register tests
 include(CTest)
-add_test(NAME PhudTests COMMAND phud_tests)
+add_test(NAME CommsTests COMMAND test_comms)

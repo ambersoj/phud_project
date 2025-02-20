@@ -48,6 +48,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/usr/local/phud_project/build/ipc/cmake_install.cmake")
   include("/usr/local/phud_project/build/hud/cmake_install.cmake")
   include("/usr/local/phud_project/build/net/cmake_install.cmake")
+  include("/usr/local/phud_project/build/comms/cmake_install.cmake")
+  include("/usr/local/phud_project/build/cli/cmake_install.cmake")
   include("/usr/local/phud_project/build/tests/cmake_install.cmake")
 
 endif()

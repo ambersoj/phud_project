@@ -127,18 +127,32 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-tests/CMakeFiles/phud_tests.dir/rule:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/phud_tests.dir/rule
-.PHONY : tests/CMakeFiles/phud_tests.dir/rule
+tests/CMakeFiles/test_comms.dir/rule:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_comms.dir/rule
+.PHONY : tests/CMakeFiles/test_comms.dir/rule
 
 # Convenience name for target.
-phud_tests: tests/CMakeFiles/phud_tests.dir/rule
-.PHONY : phud_tests
+test_comms: tests/CMakeFiles/test_comms.dir/rule
+.PHONY : test_comms
 
 # fast build rule for target.
-phud_tests/fast:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/phud_tests.dir/build.make tests/CMakeFiles/phud_tests.dir/build
-.PHONY : phud_tests/fast
+test_comms/fast:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_comms.dir/build.make tests/CMakeFiles/test_comms.dir/build
+.PHONY : test_comms/fast
+
+# Convenience name for target.
+tests/CMakeFiles/test_cli.dir/rule:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_cli.dir/rule
+.PHONY : tests/CMakeFiles/test_cli.dir/rule
+
+# Convenience name for target.
+test_cli: tests/CMakeFiles/test_cli.dir/rule
+.PHONY : test_cli
+
+# fast build rule for target.
+test_cli/fast:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_cli.dir/build.make tests/CMakeFiles/test_cli.dir/build
+.PHONY : test_cli/fast
 
 # Convenience name for target.
 tests/CMakeFiles/Experimental.dir/rule:
@@ -532,77 +546,53 @@ ContinuousSubmit/fast:
 	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/ContinuousSubmit.dir/build.make tests/CMakeFiles/ContinuousSubmit.dir/build
 .PHONY : ContinuousSubmit/fast
 
-test_hud.o: test_hud.cpp.o
-.PHONY : test_hud.o
+test_cli.o: test_cli.cpp.o
+.PHONY : test_cli.o
 
 # target to build an object file
-test_hud.cpp.o:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/phud_tests.dir/build.make tests/CMakeFiles/phud_tests.dir/test_hud.cpp.o
-.PHONY : test_hud.cpp.o
+test_cli.cpp.o:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_cli.dir/build.make tests/CMakeFiles/test_cli.dir/test_cli.cpp.o
+.PHONY : test_cli.cpp.o
 
-test_hud.i: test_hud.cpp.i
-.PHONY : test_hud.i
+test_cli.i: test_cli.cpp.i
+.PHONY : test_cli.i
 
 # target to preprocess a source file
-test_hud.cpp.i:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/phud_tests.dir/build.make tests/CMakeFiles/phud_tests.dir/test_hud.cpp.i
-.PHONY : test_hud.cpp.i
+test_cli.cpp.i:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_cli.dir/build.make tests/CMakeFiles/test_cli.dir/test_cli.cpp.i
+.PHONY : test_cli.cpp.i
 
-test_hud.s: test_hud.cpp.s
-.PHONY : test_hud.s
+test_cli.s: test_cli.cpp.s
+.PHONY : test_cli.s
 
 # target to generate assembly for a file
-test_hud.cpp.s:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/phud_tests.dir/build.make tests/CMakeFiles/phud_tests.dir/test_hud.cpp.s
-.PHONY : test_hud.cpp.s
+test_cli.cpp.s:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_cli.dir/build.make tests/CMakeFiles/test_cli.dir/test_cli.cpp.s
+.PHONY : test_cli.cpp.s
 
-test_main.o: test_main.cpp.o
-.PHONY : test_main.o
+test_comms.o: test_comms.cpp.o
+.PHONY : test_comms.o
 
 # target to build an object file
-test_main.cpp.o:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/phud_tests.dir/build.make tests/CMakeFiles/phud_tests.dir/test_main.cpp.o
-.PHONY : test_main.cpp.o
+test_comms.cpp.o:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_comms.dir/build.make tests/CMakeFiles/test_comms.dir/test_comms.cpp.o
+.PHONY : test_comms.cpp.o
 
-test_main.i: test_main.cpp.i
-.PHONY : test_main.i
-
-# target to preprocess a source file
-test_main.cpp.i:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/phud_tests.dir/build.make tests/CMakeFiles/phud_tests.dir/test_main.cpp.i
-.PHONY : test_main.cpp.i
-
-test_main.s: test_main.cpp.s
-.PHONY : test_main.s
-
-# target to generate assembly for a file
-test_main.cpp.s:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/phud_tests.dir/build.make tests/CMakeFiles/phud_tests.dir/test_main.cpp.s
-.PHONY : test_main.cpp.s
-
-test_net.o: test_net.cpp.o
-.PHONY : test_net.o
-
-# target to build an object file
-test_net.cpp.o:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/phud_tests.dir/build.make tests/CMakeFiles/phud_tests.dir/test_net.cpp.o
-.PHONY : test_net.cpp.o
-
-test_net.i: test_net.cpp.i
-.PHONY : test_net.i
+test_comms.i: test_comms.cpp.i
+.PHONY : test_comms.i
 
 # target to preprocess a source file
-test_net.cpp.i:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/phud_tests.dir/build.make tests/CMakeFiles/phud_tests.dir/test_net.cpp.i
-.PHONY : test_net.cpp.i
+test_comms.cpp.i:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_comms.dir/build.make tests/CMakeFiles/test_comms.dir/test_comms.cpp.i
+.PHONY : test_comms.cpp.i
 
-test_net.s: test_net.cpp.s
-.PHONY : test_net.s
+test_comms.s: test_comms.cpp.s
+.PHONY : test_comms.s
 
 # target to generate assembly for a file
-test_net.cpp.s:
-	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/phud_tests.dir/build.make tests/CMakeFiles/phud_tests.dir/test_net.cpp.s
-.PHONY : test_net.cpp.s
+test_comms.cpp.s:
+	cd /usr/local/phud_project/build && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_comms.dir/build.make tests/CMakeFiles/test_comms.dir/test_comms.cpp.s
+.PHONY : test_comms.cpp.s
 
 # Help Target
 help:
@@ -641,16 +631,14 @@ help:
 	@echo "... NightlySubmit"
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
-	@echo "... phud_tests"
-	@echo "... test_hud.o"
-	@echo "... test_hud.i"
-	@echo "... test_hud.s"
-	@echo "... test_main.o"
-	@echo "... test_main.i"
-	@echo "... test_main.s"
-	@echo "... test_net.o"
-	@echo "... test_net.i"
-	@echo "... test_net.s"
+	@echo "... test_cli"
+	@echo "... test_comms"
+	@echo "... test_cli.o"
+	@echo "... test_cli.i"
+	@echo "... test_cli.s"
+	@echo "... test_comms.o"
+	@echo "... test_comms.i"
+	@echo "... test_comms.s"
 .PHONY : help
 
 

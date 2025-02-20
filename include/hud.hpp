@@ -1,23 +1,24 @@
+// hud.hpp - Updated to support Unix socket commands
+
 #ifndef HUD_HPP
 #define HUD_HPP
 
-#include "PacketInfo.hpp"
-#include "SharedMemoryIPC.hpp"
+#include <string>
+#include "UnixSocketComms.hpp"
 
 class Hud {
 public:
-    Hud() = default;
-    ~Hud() = default;
+    Hud();
+    ~Hud();
 
     void initialize();
     void render();
-    void update();
-
-    PacketInfo getLastPacket() const;  // ✅ Restored for testing
+    void shutdown();
+    void listenForCommands(); // ✅ New: Listens for Unix socket commands
+    void processCommand(const std::string& command); // ✅ New: Processes received commands
 
 private:
-    SharedMemoryIPC sharedMemory;
-    PacketInfo lastPacket;  // ✅ Keep track of last received packet
+    UnixSocketComms comms;
 };
 
 #endif // HUD_HPP

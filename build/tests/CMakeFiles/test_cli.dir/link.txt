@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/test_cli.dir/test_cli.cpp.o -o test_cli  ../cli/libcli_lib.a ../comms/libcomms.a ../_deps/catch2-build/src/libCatch2Main.a -lpthread ../_deps/catch2-build/src/libCatch2.a 

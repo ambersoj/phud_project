@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/phud_cli.dir/cli.cpp.o -o phud_cli  libcli_lib.a ../comms/libcomms.a -lpthread 

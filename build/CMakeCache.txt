@@ -515,6 +515,12 @@ MEMORYCHECK_SUPPRESSIONS_FILE:FILEPATH=
 SITE:STRING=PRED
 
 //Dependencies for the target
+cli_lib_LIB_DEPENDS:STATIC=general;comms;
+
+//Dependencies for the target
+comms_LIB_DEPENDS:STATIC=general;pthread;
+
+//Dependencies for the target
 hud_LIB_DEPENDS:STATIC=general;ipc;
 
 //Dependencies for the target
@@ -531,15 +537,6 @@ phud_project_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 phud_project_SOURCE_DIR:STATIC=/usr/local/phud_project
-
-//Value Computed by CMake
-phud_tests_BINARY_DIR:STATIC=/usr/local/phud_project/build/tests
-
-//Value Computed by CMake
-phud_tests_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-phud_tests_SOURCE_DIR:STATIC=/usr/local/phud_project/tests
 
 
 ########################
@@ -786,7 +783,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -1,24 +1,44 @@
 #include "hud.hpp"
 #include <iostream>
+#include <thread>
+
+Hud::Hud() {
+    // Initialization
+}
+
+Hud::~Hud() {
+    shutdown();
+}
 
 void Hud::initialize() {
     std::cout << "HUD Initialized" << std::endl;
-    sharedMemory.initialize();
+    comms.startServer("/tmp/hud_socket");
+    std::thread listener(&Hud::listenForCommands, this);
+    listener.detach();
 }
 
 void Hud::render() {
     std::cout << "Rendering HUD" << std::endl;
-    sharedMemory.sendMessage("Packet data");  // ✅ sendMessage() replaces writeData()
 }
 
-void Hud::update() {
-    std::cout << "Updating HUD with new packet info" << std::endl;
-    std::string message = sharedMemory.receiveMessage();
-    lastPacket.size = message.size();  // ✅ Store packet info
-    lastPacket.src_ip = "10.10.10.1";
-    lastPacket.dst_ip = "10.10.10.2";
+void Hud::shutdown() {
+    std::cout << "Shutting down HUD" << std::endl;
 }
 
-PacketInfo Hud::getLastPacket() const {  // ✅ Added for testing
-    return lastPacket;
+void Hud::listenForCommands() {
+    while (true) {
+        std::string command = comms.receiveMessage();
+        if (!command.empty()) {
+            processCommand(command);
+        }
+    }
+}
+
+void Hud::processCommand(const std::string& command) {
+    std::cout << "Processing command: " << command << std::endl;
+    if (command == "render") {
+        render();
+    } else if (command == "shutdown") {
+        shutdown();
+    }
 }
